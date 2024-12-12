@@ -256,7 +256,7 @@ const ComposeDialog: React.FC<ComposeDialogProps> = ({ open, onClose }) => {
                     <div
                         ref={editorRef}
                         contentEditable
-                        placeholder="Message"
+                        data-placeholder="Message"
                         style={{
                             border: '1px solid #ccc',
                             padding: '8px',
@@ -266,8 +266,11 @@ const ComposeDialog: React.FC<ComposeDialogProps> = ({ open, onClose }) => {
                             outline: 'none',
                             borderRadius: '4px',
                         }}
-                        dangerouslySetInnerHTML={{ __html: message }}
-                    />
+                        onInput={(e) => setMessage(e.currentTarget.innerHTML)}
+                    >
+                        {message}
+                    </div>
+
                     <Box sx={{ mt: 2, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                         <Button
                             variant="contained"

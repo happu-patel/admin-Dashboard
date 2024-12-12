@@ -1,0 +1,182 @@
+.main {
+    padding: 20px 20px;
+}
+
+.heading h3 {
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    color: rgb(47 43 61 / 0.9);
+    line-height: 1.5556 !important;
+    margin-bottom: 0px;
+}
+
+.heading p {
+    font-family: "Public Sans",
+        sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    color: rgb(47 43 61/ 0.55);
+}
+
+.heading {
+    position: relative;
+}
+
+.c_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.c_icon:hover {
+    color: #666;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 7rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-menu.show-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding-left: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #666;
+}
+
+.name h6 {
+    font-family: "Public Sans", sans-serif !important;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    font-weight: 500;
+}
+
+.name p {
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    color: rgb(47 43 61 / 0.7);
+    line-height: 1.53846154;
+}
+
+.up-icon {
+    color: #28C76F;
+    font-size: x-large;
+}
+
+.amount p {
+    margin-bottom: 0px;
+    color: #28C76F;
+    font-family: "Public Sans", sans-serif !important;
+}
+
+.icon_down {
+    color: #FF4C51;
+    font-size: x-large;
+}
+
+.brazil_am p {
+    color: #FF4C51;
+    font-family: "Public Sans", sans-serif !important;
+    margin-bottom: 0px;
+}
+
+@media(max-width:1469px) {
+    .col-sm-6 {
+        width: 50%;
+        padding: 0 5px;
+    }
+}
+
+@media(max-width:1199px) {
+    .countries_info {
+        padding: 46px 0px;
+    }
+}
+
+@media (max-width:1024px) {
+    .countries_info {
+        padding: 46px 0px;
+    }
+}
+
+@media (max-width:567px) {
+    .col-sm-6 {
+        width: 50%;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        padding: 10px;
+    }
+
+    .heading h3 {
+        font-size: 1rem !important;
+    }
+
+    .heading p {
+        font-size: 0.8rem;
+    }
+
+    .name h6 {
+        font-size: 0.8rem;
+    }
+
+    .name p {
+        font-size: 0.7rem;
+    }
+
+    .amount p,
+    .brazil_am p {
+        font-size: 0.7rem;
+    }
+
+    .up-icon,
+    .icon_down {
+        font-size: large;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    .row {
+        margin: 0 -5px;
+    }
+
+    Image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ps-3 {
+        padding-left: 0.5rem !important;
+    }
+}

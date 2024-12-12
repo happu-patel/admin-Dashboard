@@ -1,0 +1,465 @@
+.css-9rw0v {
+    box-shadow: rgba(47, 43, 61, 0.12) 0px 2px 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: .375rem;
+}
+
+.css-t9l9p5 {
+    padding-inline: 1rem !important;
+    border-bottom: 1px solid #00000021;
+}
+
+.css-1go4nxh {
+    padding: 0px !important;
+}
+
+.css-1coeexk {
+    border-bottom: 1px solid #00000021;
+    padding: 1.5rem;
+}
+
+.css-1krcbx4 {
+    margin-bottom: 0px !important;
+    border-bottom: 1px solid #00000021;
+    padding-inline: 1rem !important;
+}
+
+.css-6y66pz-MuiButtonBase-root-MuiListItem-root {
+    border-bottom: 1px solid #00000021;
+}
+
+.css-13y71z-MuiButtonBase-root-MuiListItem-root {
+    border-bottom: 1px solid #00000021;
+}
+
+.css-8l0d08-MuiButtonBase-root-MuiCheckbox-root {
+    margin-left: 0px !important;
+}
+
+.email-item {
+    position: relative;
+}
+
+.Mui-checked,
+.mui-aqy3xm.MuiCheckbox-indeterminate {
+    color: #7367F0 !important;
+}
+
+.css-ldvwv0-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #7367F0 !important;
+}
+
+.email-item:hover .actions {
+    display: flex;
+}
+
+/* style.css */
+.actions {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    /* Or your preferred background color */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    gap: 0.25rem;
+}
+
+.MuiListItem-root:hover .actions {
+    display: flex;
+    align-items: center;
+}
+
+
+/* sidebar badges */
+.css-1to51ap-MuiBadge-root .MuiBadge-badge {
+    right: 15px;
+    top: 0px !important;
+    border: none !important;
+    padding: 4px 5px;
+}
+
+.css-1hskriy {
+    width: 260px;
+    border-right: 1px solid #00000021;
+    min-width: 260px;
+}
+
+.email_contain {
+    background-color: rgb(47 43 61 / 0.06) !important;
+}
+
+.css-zza0ns-MuiBadge-badge {
+    background-color: rgb(115 103 240 / 0.16) !important;
+    color: #7367F0 !important;
+    font-weight: 500 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    height: 24px !important;
+    min-width: 24px !important;
+}
+
+.css-imxc6v-MuiBadge-badge {
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    background-color: rgb(255 159 67 / 0.16) !important;
+    color: #FF9F43 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    border-radius: 20px !important;
+}
+
+.css-zza0ns-MuiBadge-badge {
+    border-radius: 40px !important;
+}
+
+.css-12e8p1t-MuiListItemIcon-root {
+    padding-left: 10px !important;
+}
+
+.css-tlelie-MuiListItemText-root {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.css-6wiz6t-MuiButtonBase-root-MuiButton-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    background-color: #7367F0 !important;
+    color: #FFFFFF;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+    padding: 0.5rem 1.25rem !important;
+    font-weight: 500 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    text-transform: none !important;
+    border-radius: 6px !important;
+
+}
+
+.css-10hburv-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    color: inherit !important;
+}
+
+.css-y6oxnm-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    font-weight: 500 !important;
+    color: rgb(47 43 61 / 0.9) !important;
+}
+
+.css-jrj0v0-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846 !important;
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+.css-fl434p-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    padding-inline: 1.5rem;
+}
+
+.css-2ulfj5-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.css-hp4jbd-MuiPaper-root {
+    margin-bottom: 0px !important;
+    padding: 0px;
+    border-radius: 0%;
+    box-shadow: none;
+}
+
+.css-10wpov9-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.email_padding {
+    padding-inline: 2rem;
+    padding-block: 1.25rem;
+
+}
+
+.paperclass {
+    box-shadow: 0px 3px 12px rgb(47 43 61 / 0.14) !important;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 6px;
+}
+
+.css-70qvj9 {
+    block-size: 56px;
+}
+
+.css-1lekzkb {
+    padding-block: .5rem;
+}
+
+.css-d4ykcn {
+    margin-bottom: 0px;
+    padding-inline: 1.5rem;
+}
+
+.css-jlrfvq-MuiChip-root {
+    margin-right: 10px;
+}
+
+.css-1wufw8g-MuiChip-root {
+    margin-right: 10px;
+}
+
+@media(max-width:1024px) {
+    .maindiv {
+        padding: 0px !important;
+        height: 100vh;
+        margin-top: 18px !important;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0px 3px 12px rgb(47 43 61 / 0.14);
+    }
+
+    .css-1hskriy {
+        width: 215px !important;
+        min-width: 215px !important
+    }
+
+    .css-u4p24i {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:991px) {
+    .maindiv {
+        padding: 0px !important;
+        height: 100vh;
+        margin-top: 18px !important;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0px 3px 12px rgb(47 43 61 / 0.14);
+    }
+
+    .css-1hskriy {
+        border-right: none !important;
+    }
+
+    .css-17v1xel-MuiDrawer-docked .MuiDrawer-paper {
+        border-right: none !important;
+        width: 215px;
+    }
+
+    .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+        border-right: none !important;
+    }
+
+    .css-1hskriy {
+        width: 215px !important;
+        min-width: 215px !important
+    }
+
+    .selectedEmailTitle {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .css-u4p24i {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .css-b839ej-MuiBackdrop-root {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 215px;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-tap-highlight-color: transparent;
+        z-index: 1198;
+        color: #fff;
+        background-color: rgb(47 43 61 / 0.5);
+    }
+
+    .css-d4ykcn {
+        padding-inline: 0rem !important;
+    }
+}
+
+@media (max-width:768px) {
+    .maindiv {
+        padding: 0px !important;
+        margin-top: 18px !important;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0px 3px 12px rgb(47 43 61 / 0.14);
+    }
+
+    .css-17v1xel-MuiDrawer-docked .MuiDrawer-paper {
+        border-right: none !important;
+        width: 215px;
+    }
+
+    .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+        border-right: none !important;
+    }
+
+    .css-1hskriy {
+        width: 215px !important;
+        min-width: 215px !important
+    }
+
+    .css-u4p24i {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .selectedEmailTitle {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .css-b839ej-MuiBackdrop-root {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 215px;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-tap-highlight-color: transparent;
+        z-index: 1198;
+        color: #fff;
+        background-color: rgb(47 43 61 / 0.5);
+    }
+}
+
+@media (max-width:500px) {
+    .maindiv {
+        padding: 0px !important;
+        margin-top: 18px !important;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0px 3px 12px rgb(47 43 61 / 0.14);
+    }
+
+    .css-17v1xel-MuiDrawer-docked .MuiDrawer-paper {
+        border-right: none !important;
+        width: 215px;
+    }
+
+    .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+        border-right: none !important;
+    }
+
+    .css-1hskriy {
+        width: 215px !important;
+        min-width: 215px !important
+    }
+
+    .css-1krcbx4 {
+        padding-inline: 0px !important;
+    }
+
+    .css-ldvwv0-MuiButtonBase-root-MuiCheckbox-root {
+        padding: 0px !important;
+    }
+
+    .css-6y66pz-MuiButtonBase-root-MuiListItem-root {
+        padding: 5px 0px 5px 0px !important;
+        gap: 10px !important;
+    }
+
+    .css-cveggr-MuiListItemIcon-root {
+        min-width: 0px !important;
+    }
+
+    .css-13y71z-MuiButtonBase-root-MuiListItem-root {
+        padding: 5px 0px 5px 0px !important;
+        gap: 10px !important;
+    }
+
+    .css-8l0d08-MuiButtonBase-root-MuiCheckbox-root {
+        padding: 0px !important;
+    }
+
+    .MuiListItem-root:hover .actions {
+        display: none !important;
+    }
+
+    .css-19midj6 {
+        padding: 6px !important;
+    }
+
+    .css-asfxdi-MuiAvatar-root {
+        width: 34px;
+        height: 34px;
+    }
+
+    .css-g9fo99-MuiAvatar-root {
+        width: 34px;
+        height: 34px;
+    }
+
+    .css-qgow6d-MuiAvatar-root {
+        width: 34px;
+        height: 34px;
+    }
+
+    .css-9yffrj-MuiAvatar-root {
+        width: 34px;
+        height: 34px;
+    }
+
+    .css-17psclj-MuiAvatar-root {
+        width: 34px;
+        height: 34px;
+    }
+
+    .css-u4p24i {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .css-pori7h {
+        display: none !important;
+    }
+
+    .selectedEmailTitle {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .css-d4ykcn {
+        padding-inline: 0rem !important;
+    }
+
+    .email_padding {
+        padding-inline: 1.5rem !important;
+        padding-block: 1.25rem;
+
+    }
+
+    .css-b839ej-MuiBackdrop-root {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 215px;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-tap-highlight-color: transparent;
+        z-index: 1198;
+        color: #fff;
+        background-color: rgb(47 43 61 / 0.5);
+    }
+}

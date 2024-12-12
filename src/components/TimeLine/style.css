@@ -1,0 +1,199 @@
+.css-1ms7hib-MuiTimelineItem-root::before {
+
+    content: none !important;
+}
+
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+    height: auto;
+}
+
+.css-18y2uza-MuiTypography-root-MuiTimelineContent-root {
+    padding: 8.6px 16px !important;
+}
+
+.first {
+    font-size: 0.9375rem !important;
+    line-height: 1.46667;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    color: rgb(47 43 61 / 0.9);
+}
+
+.timeline_card {
+    padding: 4px 28px !important;
+}
+
+.invoice_min {
+    color: rgb(47 43 61 / 0.4);
+    font-weight: 400 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.38462 !important;
+    letter-spacing: 0.4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.invoices_subtitle {
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    color: rgb(47 43 61 / 0.7);
+}
+
+.pdf_part {
+    background-color: rgb(47 43 61 / 0.06) !important;
+    border-radius: .375rem !important;
+    align-items: center !important;
+    width: 129px !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    padding-inline: .625rem !important;
+    padding-block: 5px !important;
+    color: rgb(47 43 61 / 0.7);
+}
+
+.client {
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    font-weight: 500 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    color: rgb(47 43 61 / 0.7);
+}
+
+.css-1ytufz-MuiAvatarGroup-root {
+    justify-content: start;
+}
+
+.css-1gltsc6-MuiAvatarGroup-root {
+    justify-content: left;
+}
+
+.pull-up {
+    transition: box-shadow 200ms ease 0ms, transform 200ms ease 0ms;
+    cursor: pointer;
+}
+
+.css-w6eiou-MuiAvatarGroup-root {
+    flex-direction: row !important;
+}
+
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.MuiAvatarGroup-avatar.css-17o22dy-MuiAvatar-root:hover {
+    z-index: 2;
+    box-shadow: var(--mui-customShadows-md);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.MuiAvatarGroup-avatar.css-aawqjg-MuiAvatar-root:hover {
+    z-index: 2;
+    box-shadow: var(--mui-customShadows-md);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    left: 1311px !important;
+}
+
+span.MuiTypography-root.MuiTypography-body2.MuiCardHeader-title.css-et1ao3-MuiTypography-root {
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5556 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    color: rgb(47 43 61 / 0.9);
+}
+
+.css-w6eiou-MuiAvatarGroup-root .MuiAvatar-root:last-child {
+    margin-right: -8px !important;
+}
+
+
+
+@media(max-width:1199px) {
+    .timeline_card {
+        padding: 20px 28px !important;
+        /* margin-top: 30px; */
+    }
+
+
+}
+
+@media (max-width:1024px) {
+    .css-46bh2p-MuiCardContent-root {
+        padding: 20px 20px !important;
+    }
+
+    .css-18y2uza-MuiTypography-root-MuiTimelineContent-root {
+        padding: 20.6px 16px !important;
+    }
+}
+
+@media (max-width:991px) {
+    .css-18y2uza-MuiTypography-root-MuiTimelineContent-root {
+        padding: 0px 0px !important;
+    }
+}
+
+@media (max-width:768px) {
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+        left: 510px !important;
+    }
+}
+
+@media (max-width:567px) {
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+        left: 230px !important;
+    }
+
+    .css-55vwbm-MuiTimeline-root {
+        padding: 6px 0px !important;
+    }
+
+    .first {
+        font-size: 0.7875rem !important;
+    }
+
+    .pdf_part {
+        font-size: 0.8375rem !important;
+    }
+
+    .css-55vwbm-MuiTimeline-root {
+        padding: 6px 0px !important;
+    }
+
+    .contentoftimeline {
+        padding: 5px 10px !important;
+    }
+
+}
+
+@media (max-width:400px) {
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+        left: 190px !important;
+    }
+
+    .block {
+        display: block !important;
+    }
+
+    .css-55vwbm-MuiTimeline-root {
+        padding: 6px 0px !important;
+    }
+
+    .contentoftimeline {
+        padding: 5px 10px !important;
+    }
+}

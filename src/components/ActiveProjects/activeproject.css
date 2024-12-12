@@ -1,0 +1,229 @@
+*,
+::after,
+::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.heading h3 {
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    color: rgb(47 43 61 / 0.9);
+    line-height: 1.5556 !important;
+    margin-bottom: 0px;
+}
+
+.heading p {
+    font-family: "Public Sans",
+        sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    color: rgb(47 43 61/ 0.55);
+}
+
+.heading {
+    position: relative;
+}
+
+.c_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.c_icon:hover {
+    color: #666;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 7rem;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-menu.show-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding-left: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #666;
+}
+
+.flex-column p {
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.53846154;
+    font-family: "Public Sans",
+        sans-serif;
+    color: rgb(47 43 61 / 0.7);
+}
+
+.flex-column h4 {
+    font-family: "Public Sans",
+        sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    font-weight: 500;
+    color: rgb(47 43 61 / 0.9);
+}
+
+h5 {
+    font-family: "Public Sans",
+        sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    color: rgb(47 43 61 / 0.4);
+}
+
+.css-nzfize-MuiLinearProgress-root {
+    background-color: #f6f6f6 !important;
+}
+
+.css-obosm6-MuiLinearProgress-root {
+    background-color: #f6f6f6 !important;
+}
+
+.css-1qtmu7f-MuiLinearProgress-root {
+    background-color: #f6f6f6 !important;
+}
+
+.css-5xe99f-MuiLinearProgress-bar1 {
+    background-color: #7367F0 !important;
+}
+
+.css-1s8y4o-MuiLinearProgress-root {
+    background-color: #f6f6f6 !important;
+}
+
+.css-1wyaang-MuiLinearProgress-bar1 {
+    background-color: #00BAD1 !important;
+}
+
+.css-1f7kz1v-MuiLinearProgress-root {
+    background-color: #f6f6f6 !important;
+}
+
+.css-py62y0-MuiLinearProgress-root {
+    background-color: #f6f6f6 !important;
+}
+
+@media(max-width:1469px) {
+    .col_gap {
+        column-gap: 0rem !important;
+    }
+
+    .column-gap-5 {
+        column-gap: 0rem !important;
+    }
+}
+
+@media(max-width:1199px) {
+    .col_gap {
+        column-gap: 6rem !important;
+    }
+}
+
+@media (max-width:991px) {
+    .col_gap {
+        column-gap: 0rem !important;
+    }
+
+    .column-gap-3 {
+        column-gap: 0rem !important;
+    }
+}
+
+@media only screen and (max-width:896px) {
+    .col_gap {
+        column-gap: 20rem !important;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        padding-left: 0px;
+        width: 567px;
+        margin: auto;
+        padding-right: 0px;
+        margin: auto;
+    }
+
+    .col_gap {
+        column-gap: 11rem !important;
+    }
+}
+
+@media (max-width:567px) {
+    .container {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .col_gap {
+        column-gap: 1rem !important;
+    }
+}
+
+
+@media (max-width:400px) {
+    .column-gap-4 {
+        column-gap: 0.5rem !important;
+    }
+
+    .col_gap {
+        column-gap: 0rem !important;
+    }
+
+    .laravellinear {
+        padding-left: 50px !important;
+    }
+
+    .all_padding {
+        padding-left: 20px !important;
+    }
+
+    .figmalinear {
+        padding-left: 58px !important;
+    }
+
+    .vuejslinear {
+        padding-left: 37px !important;
+    }
+
+    .reactlinear {
+        padding-left: 55px !important;
+    }
+
+    .bootstrapliner {
+        padding-left: 50px !important;
+    }
+
+    .sketchliner {
+        padding-left: 24px !important;
+    }
+}

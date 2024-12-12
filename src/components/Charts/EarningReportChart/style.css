@@ -1,0 +1,140 @@
+.earning-reports {
+    padding: 20px 20px;
+    font-family: "Public Sans", sans-serif;
+}
+
+.earning-reports h2 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgb(47 43 61 / 0.9);
+}
+
+.earning-reports p {
+    margin: 5px 0 20px;
+    font-weight: 400;
+    color: rgb(47 43 61/0.55);
+}
+
+.titles {
+    position: relative;
+}
+
+.f_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.f_icon:hover {
+    color: #666;
+}
+
+.doticon {
+    text-align: right;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 7rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-menu.show-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding-left: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #666;
+}
+
+.chart-buttons {
+    display: flex;
+    column-gap: 25px;
+    margin-bottom: 20px;
+}
+
+.chart-buttons button {
+    width: 105px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 17px 20px;
+    color: #333;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px dashed #3333;
+}
+
+.chart-buttons button.active {
+    border: 1px solid #7a74ee;
+}
+
+.icon {
+    font-size: 34px;
+    margin-bottom: 5px;
+    /* background-color: #EEEDF0; */
+    padding: 5px;
+    /* color: rgb(47 43 61 / 0.9); */
+    border-radius: 3px;
+}
+
+.chart-buttons button.active .icon {
+    color: #7a74ee;
+    background-color: #dedcff;
+}
+
+.grid {
+    display: grid;
+    gap: 1em;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "a h"
+        "a c"
+        "a f";
+    height: calc(100vh - 2em);
+    width: calc(100vw - 2em);
+    /* not necessary, but just to be explicit */
+    margin: 1em;
+}
+
+@media (max-width:567px) {
+    .chart-buttons {
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width:400px) {
+    .chart-buttons {
+        overflow-y: scroll;
+    }
+
+    .canvas {
+        height: 100vh;
+    }
+
+
+}

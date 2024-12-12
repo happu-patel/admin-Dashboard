@@ -1,0 +1,48 @@
+.c_icon {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    right: 0;
+    cursor: pointer;
+}
+
+.c_icon:hover {
+    color: #666;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 7rem;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-menu.show-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding-left: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #666;
+}
+
+@media (max-width:768px){
+    
+}

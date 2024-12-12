@@ -1,0 +1,257 @@
+.heading {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-size: 1.5rem !important;
+    color: rgb(47 43 61 / 0.9) !important;
+}
+
+.subtitle {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+.css-zg4z4n {
+    margin-top: 0px !important;
+    padding: 75px !important;
+}
+
+.css-ii0hpo {
+    margin-top: 0px !important;
+}
+
+.css-mhc70k-MuiGrid-root {
+    padding-top: 20px !important;
+}
+
+.css-1kjd2j5-MuiButtonBase-root-MuiTab-root {
+    font-weight: 500 !important;
+    font-size: 0.9375rem !important;
+    min-height: 38px !important;
+    padding: 0.5rem 1.25rem !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    text-transform: none !important;
+    color: rgb(47 43 61 / 0.9) !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+.css-1kjd2j5-MuiButtonBase-root-MuiTab-root:hover {
+    color: #7367F0 !important;
+    border-radius: 6px !important;
+    background-color: rgb(115 103 240 / 0.16);
+    padding-inline-end: 1.25rem;
+}
+
+.css-1kjd2j5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    box-shadow: 0px 2px 6px rgb(115 103 240 / 0.3);
+    color: #fff !important;
+    background-color: #7367F0 !important;
+    border-radius: 6px !important;
+}
+
+.css-35zqo5-MuiTabs-root {
+    border-right: 0px !important;
+    min-width: 131px !important;
+    min-height: 38px;
+}
+
+.css-lfwcke-MuiTabs-flexContainer {
+    gap: 0.25rem !important;
+}
+
+.css-19midj6 {
+    padding: 0px !important;
+}
+
+.css-10d9dml-MuiTabs-indicator {
+    background-color: transparent !important;
+}
+
+.css-blytkt-MuiTypography-root {
+    font-size: 1.125rem;
+    line-height: 1.5556;
+}
+
+.css-2zmflv {
+    height: 50px;
+    width: 50px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    border-radius: 6px;
+}
+
+.css-8osq3g {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667;
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+.css-1eg9v76-MuiPaper-root-MuiAccordion-root:first-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.css-1eg9v76-MuiPaper-root-MuiAccordion-root:last-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.css-1eg9v76-MuiPaper-root-MuiAccordion-root {
+    margin-bottom: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: 0px 1px 6px rgb(47 43 61 / 0.1) !important;
+    transition: margin 300ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom-right-radius: 6px;
+    border-radius: 6px !important;
+}
+
+.css-1eg9v76-MuiPaper-root-MuiAccordion-root::before {
+    position: none !important;
+    content: none !important;
+}
+
+.css-ahj2mt-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    color: inherit !important;
+    font-weight: 500 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+}
+
+.subtitle {
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    color: rgb(47 43 61 / 0.7) !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+    padding: 0px 16px 16px;
+}
+
+.css-eqpfi5-MuiAccordionSummary-content.Mui-expanded {
+    margin: 10px 0;
+}
+
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+    min-height: 46px !important;
+}
+
+/* Mui-chip */
+.css-15p98er-MuiChip-root {
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    border-radius: 4px !important;
+    color: #7367F0 !important;
+    background-color: rgb(115 103 240 / 0.16) !important;
+}
+
+.css-5lbw0b-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+    line-height: 1.58334 !important;
+    color: rgb(47 43 61 / 0.9) !important;
+}
+
+.css-1qo2szd-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 100 !important;
+    font-size: 0.9375rem !important;
+}
+
+.css-11f322t {
+    background-color: rgb(47 43 61 / 0.06) !important;
+    border-radius: .375rem !important;
+    padding: 25px !important;
+}
+
+.css-1uyd4dz {
+    height: 46px;
+    width: 46px;
+    font-size: 0.9375rem;
+    line-height: 1.2;
+    padding: 6px !important;
+    background-color: rgb(115 103 240 / 0.16) !important;
+}
+
+.css-2ulfj5-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5556 !important;
+    color: rgb(47 43 61 / 0.9) !important;
+}
+
+.css-1mrnscz-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+@media (max-width:1024px) {
+    .container {
+        width: 960px !important;
+        /* margin: auto !important; */
+    }
+}
+
+@media (max-width:768px) {
+    .css-1yuhvjn {
+        display: none;
+    }
+
+}
+
+@media(max-width:567px) {
+    .css-1yw9apu {
+        padding: 75px 10px !important;
+    }
+
+    .subtitle {
+        text-align: center !important;
+        padding: 0px 10px !important;
+    }
+
+    .css-ii0hpo {
+        padding: 0px 10px !important;
+    }
+
+    .searchicon {
+        left: 14px !important;
+    }
+
+    .css-35zqo5-MuiTabs-root {
+        width: 100% !important;
+    }
+}

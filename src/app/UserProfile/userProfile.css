@@ -1,0 +1,925 @@
+.main_content {
+    transition: margin-left 0.3s ease;
+}
+
+.main_content.expanded {
+    margin-left: 250px;
+    /* Space for expanded sidebar */
+}
+
+.main_content.collapsed {
+    margin-left: 60px;
+    /* Adjusted for collapsed sidebar */
+}
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    color: rgb(47 43 61 / 0.9);
+    box-shadow: 0px 3px 12px rgb(47 43 61 / 0.14);
+    overflow: hidden;
+
+}
+
+.userimg {
+    border-color: #FFFFFF;
+    border-width: 5px;
+    border-start-start-radius: 6px;
+    border-start-end-radius: 6px;
+    margin-block-start: -40px;
+    margin-inline-start: -5px;
+    background-color: #FFFFFF;
+    border-style: solid;
+}
+
+.pro_name {
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+    line-height: 1.58334 !important;
+    color: rgb(47 43 61 / 0.9);
+}
+
+.sub_Cat {
+    font-size: 0.9375rem !important;
+    line-height: 1.46667;
+    color: rgb(47 43 61 / 0.7);
+    font-weight: 500;
+}
+
+.colorpllate_icon {
+    width: 24px;
+    height: 24px;
+    color: rgb(47 43 61 / 0.7);
+}
+
+.button_rigth {
+    background-color: #7367F0 !important;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0.5rem 1.25rem;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    text-transform: none;
+    min-width: 64px;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    text-transform: none;
+}
+
+.button_rigth:not(.Mui-disabled) {
+    box-shadow: 0px 2px 6px rgb(115 103 240 / 0.3) !important;
+}
+
+.css-zow5z4-MuiGrid-root>.MuiGrid-item {
+    padding-top: 24px;
+}
+
+.css-cp845p-MuiGrid-root>.MuiGrid-item {
+    padding-left: 0px !important;
+}
+
+
+
+.grid_right {
+    padding-left: 24px !important;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+    min-width: 24px;
+}
+
+.css-ati914-MuiTypography-root {
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.53846154;
+    font-family: "Public Sans", sans-serif !important;
+    color: rgb(47 43 61 / 0.4);
+}
+
+.timeline_card {
+    padding: 4px 28px !important;
+}
+
+.pro_tbicon {
+    width: 24px;
+    height: 24px;
+    color: rgb(47 43 61 / 0.7);
+}
+
+.css-ahj2mt-MuiTypography-root {
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    color: rgb(47 43 61 / 0.7);
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 500;
+}
+
+.first {
+    font-size: 0.9375rem !important;
+    line-height: 1.46667;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    color: rgb(47 43 61 / 0.9);
+}
+
+.timeline_card {
+    padding: 4px 28px !important;
+}
+
+.invoice_min {
+    color: rgb(47 43 61 / 0.4);
+    font-weight: 400 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.38462 !important;
+    letter-spacing: 0.4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.timeline_align {
+    align-items: flex-start;
+}
+
+.css-1ms7hib-MuiTimelineItem-root::before {
+    content: none !important;
+}
+
+.pull-up {
+    transition: box-shadow 200ms ease 0ms, transform 200ms ease 0ms;
+    cursor: pointer;
+    justify-content: flex-end;
+
+}
+
+.css-w6eiou-MuiAvatarGroup-root {
+    flex-direction: row-reverse !important;
+}
+
+.css-1ytufz-MuiAvatarGroup-root {
+    justify-content: start;
+}
+
+.css-1gltsc6-MuiAvatarGroup-root {
+    justify-content: left;
+}
+
+
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.MuiAvatarGroup-avatar.css-1x48ft6-MuiAvatar-root:hover {
+    z-index: 2;
+    box-shadow: var(--mui-customShadows-md);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.MuiAvatarGroup-avatar.css-aawqjg-MuiAvatar-root:hover {
+    z-index: 2;
+    box-shadow: var(--mui-customShadows-md);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+
+}
+
+.css-185gdzj-MuiCardHeader-root {
+    padding: 0px !important;
+}
+
+.css-46bh2p-MuiCardContent-root {
+    padding: 0px !important;
+}
+
+.btn-connected {
+    font-weight: 500 !important;
+    line-height: 1.46667 !important;
+    text-transform: none !important;
+    min-width: 38px !important;
+    background-color: rgb(115 103 240 / 0.16) !important;
+    color: #7367F0 !important;
+    min-inline-size: 0px;
+    transition: none;
+    font-size: 22px !important;
+    padding: 0.5rem !important;
+    border: none !important;
+}
+
+.btn-not-connected {
+    background-color: #7367F0 !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    line-height: 1.46667 !important;
+    text-transform: none !important;
+    min-width: 38px !important;
+    min-inline-size: 0px;
+    transition: none;
+    font-size: 22px !important;
+    padding: 0.5rem !important;
+    border: none !important;
+}
+
+.vconnection {
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    color: #7367F0 !important;
+    text-transform: none !important;
+}
+
+.name_user {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.53846154 !important;
+    /* color: rgb(47 43 61 / 0.9) !important; */
+}
+
+.sub_text {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    /* color: rgb(47 43 61 / 0.7) !important; */
+}
+
+.badge-developer {
+    background-color: rgb(255 76 81 / 0.16);
+    /* Green for developers */
+    color: #FF4C51;
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    justify-content: center;
+    height: 24px;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+}
+
+.badge-support {
+    background-color: rgb(115 103 240 / 0.16);
+    /* Blue for support */
+    color: #7367F0;
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    justify-content: center;
+    height: 24px;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+}
+
+.badge-designer {
+    background-color: rgb(0 186 209 / 0.16);
+    /* Orange for designers */
+    color: #00BAD1;
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    justify-content: center;
+    height: 24px;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+}
+
+.badge-marketing {
+    background-color: rgb(128 131 144 / 0.16);
+    /* Red for marketing */
+    color: #808390;
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    justify-content: center;
+    height: 24px !important;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+}
+
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatarGroup-avatar.css-1wlk0hk-MuiAvatar-root:hover {
+    z-index: 2;
+    box-shadow: var(--mui-customShadows-md);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.heading_txt {
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5556 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    /* color: rgb(47 43 61 / 0.9) !important; */
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    color: rgb(47 43 61 / 0.6) !important;
+    font-size: 1.375rem !important;
+}
+
+.subtext {
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    line-height: 1.46667 !important;
+    /* color: rgb(47 43 61 / 0.7) !important; */
+}
+
+.css-sy0w89-MuiChip-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+    height: 24px !important;
+    border: none !important;
+}
+
+.css-soz8uo-MuiChip-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+    height: 24px !important;
+    border: none !important;
+}
+
+.css-62gko2-MuiChip-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+    height: 24px !important;
+    border: none !important;
+}
+
+.css-3klhno-MuiChip-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+    height: 24px !important;
+    border: none !important;
+}
+
+.css-1ccpxdr-MuiChip-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    border-radius: 4px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem;
+    padding-block: 0.125rem;
+    height: 24px !important;
+    border: none !important;
+}
+
+.heading_txt1 {
+    text-decoration: none;
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5556 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    /* color: rgb(47 43 61 / 0.9) !important; */
+}
+
+.heading_txt1:hover {
+    color: #7367F0 !important;
+}
+
+.project_client {
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    /* color: rgb(47 43 61 / 0.7) !important; */
+}
+
+.css-1qluchh {
+    padding-inline: .75rem;
+    padding-block: .5rem;
+}
+
+.css-eflgtu-MuiTypography-root {
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    /* color: rgb(47 43 61 / 0.9) !important; */
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.css-ahj2mt-MuiTypography-root {
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    /* color: rgb(47 43 61 / 0.7) !important; */
+}
+
+.sub_body2 {
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    /* color: rgb(47 43 61 / 0.7) !important; */
+}
+
+.css-1u4ma7l-MuiChip-root {
+    background-color: rgb(40 199 111 / 0.16) !important;
+    color: #28C76F !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846 !important;
+    height: 24px !important;
+}
+
+.css-6od3lo-MuiChip-label {
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    white-space: nowrap;
+    padding-inline: 0.625rem !important;
+    padding-block: 0.125rem !important;
+}
+
+.mui-da3edb {
+    margin: 0;
+    font-family: "Public Sans",
+        sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.38462 !important;
+    letter-spacing: 0.4px !important;
+    /* color: rgb(47 43 61 / 0.7) !important; */
+}
+
+.css-5xe99f-MuiLinearProgress-bar1 {
+    transition: transform .4s linear;
+    transform-origin: left;
+    background-color: #7367F0 !important;
+    border-radius: 6px !important;
+}
+
+.css-jgjjv-MuiLinearProgress-root {
+    border-radius: 6px;
+    background-color: #F1F0F2 !important;
+
+}
+
+.css-1wlk0hk-MuiAvatar-root {
+    font-size: 0.9375rem !important;
+    line-height: 1.2 !important;
+    height: 32px !important;
+    width: 32px !important;
+}
+
+.css-1x48ft6-MuiAvatar-root {
+    font-size: 0.9375rem !important;
+    line-height: 1.2 !important;
+    height: 32px !important;
+    width: 32px !important;
+}
+
+.avtar_txt {
+    font-weight: 400 !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.53846154 !important;
+    /* color: rgb(47 43 61 / 0.7) !important; */
+}
+
+.msgicon {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.css-868sv1-MuiChip-root {
+    color: #FF9F43 !important;
+    background-color: rgb(255 159 67 / 0.16) !important;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846;
+    border-radius: 4px !important;
+    height: 24px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.css-1i5m2ee-MuiChip-root {
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846;
+    border-radius: 4px !important;
+    height: 24px !important;
+    color: #FF4C51 !important;
+    background-color: rgb(255 76 81 / 0.16) !important;
+}
+
+.css-ncm70w-MuiChip-root {
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846154;
+    background-color: rgb(128 131 144 / 0.16) !important;
+    color: #808390 !important;
+    border-radius: 4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+
+}
+
+.css-1d8sx49-MuiChip-root {
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846;
+    border-radius: 4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    background-color: rgb(255 159 67 / 0.16) !important;
+    color: #FF9F43 !important;
+}
+
+.css-2ulfj5-MuiTypography-root {
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5556 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    /* color: rgb(47 43 61 / 0.9) !important; */
+}
+
+.css-1mrnscz-MuiTypography-root {
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    background-color: rgb(103, 92, 216) !important;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    text-transform: none;
+    min-width: 64px;
+    border-radius: 6px !important;
+    color: #fff !important;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0.5rem 1.25rem !important;
+
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root:not(.Mui-disabled) {
+    box-sizing: 0px 2px 6px rgb(115 103 240 / 0.3) !important;
+}
+
+.email_btn {
+    font-weight: 500;
+    line-height: 1.46667;
+    text-transform: none;
+    min-width: 64px;
+    font-family: "Public Sans",
+        sans-serif !important;
+    background-color: rgb(128 131 144 / 0.16) !important;
+    color: #808390 !important;
+    min-inline-size: 0px !important;
+    transition: none !important;
+    font-size: 22px !important;
+    padding: 0.5rem !important;
+    border: none !important;
+    border-radius: 6px !important;
+}
+
+.css-1d6wzja-MuiButton-startIcon {
+    margin: 0px !important;
+}
+
+.css-ag7rrr-MuiTypography-root {
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5556 !important;
+    /* color: rgb(47 43 61 / 0.9) !important; */
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+p.MuiTypography-root.MuiTypography-body1.css-1nxoejs-MuiTypography-root {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+.css-vmjpzh-MuiChip-root {
+    background-color: rgb(255 76 81 / 0.16) !important;
+    color: #FF4C51 !important;
+    height: 24px !important;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846;
+    border-radius: 4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.css-yecfp0-MuiChip-root {
+    height: 24px !important;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846;
+    border-radius: 4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+    color: #00BAD1 !important;
+    background-color: rgb(0 186 209 / 0.16) !important;
+}
+
+.connect_btn {
+    color: #7367F0 !important;
+    background-color: rgb(115 103 240 / 0.24) !important;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+    text-transform: none;
+    min-width: 64px;
+    font-family: "Public Sans",
+        sans-serif !important;
+    padding: 0.5rem 1.25rem !important;
+    box-shadow: none !important;
+}
+
+.css-15p98er-MuiChip-root {
+    background-color: rgb(115 103 240 / 0.16) !important;
+    color: #7367F0 !important;
+    height: 24px !important;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846;
+    border-radius: 4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.css-txuvm7-MuiChip-root {
+    background-color: rgb(40 199 111 / 0.16) !important;
+    color: #28C76F !important;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.53846;
+    border-radius: 4px !important;
+    font-family: "Public Sans",
+        sans-serif !important;
+}
+
+.css-1m16q5h-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Dark mode */
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.MuiAvatarGroup-avatar.css-aawqjg-MuiAvatar-root {
+    width: 32px;
+    height: 32px;
+}
+
+.css-yago5h {
+    padding: 6px;
+}
+
+.MuiChip-root.MuiChip-filled.MuiChip-sizeMedium.MuiChip-colorSuccess.MuiChip-filledSuccess.css-272ubc-MuiChip-root {
+    background-color: rgb(40 199 111 / 0.16);
+    height: 24px;
+    border-radius: 4px;
+    color: #28C76F;
+}
+
+.css-rv94e6-MuiLinearProgress-root {
+    background-color: #4b5175 !important;
+    border-radius: 6px !important;
+}
+
+.css-180wsb6-MuiChip-root {
+    color: #FF9F43 !important;
+    background-color: rgb(255 159 67 / 0.16) !important;
+    border-radius: 4px !important;
+    height: 24px !important;
+}
+
+.css-vkgxc-MuiChip-root {
+    border-radius: 4px !important;
+    height: 24px !important;
+    color: #FF4C51 !important;
+    background-color: rgb(255 76 81 / 0.16) !important;
+}
+
+.css-1qrcf79-MuiLinearProgress-bar1 {
+    background-color: #7367F0 !important;
+}
+
+.connected_btn {
+    background-color: #7367F0 !important;
+    color: #FFFFFF !important;
+}
+
+.css-iw8bts-MuiChip-root {
+    background-color: rgb(128 131 144 / 0.16) !important;
+    color: #808390 !important;
+    border-radius: 4px !important;
+}
+
+.css-1fhzhij-MuiChip-root {
+    color: #FF9F43 !important;
+    border-radius: 4px !important;
+    background-color: rgb(255 159 67 / 0.16) !important;
+}
+
+.css-1diji8z-MuiChip-root {
+    border-radius: 4px !important;
+    color: #FF4C51 !important;
+    background-color: rgb(255 76 81 / 0.16) !important;
+}
+
+.css-vqcyx1-MuiChip-root {
+    border-radius: 4px !important;
+    background-color: rgb(0 186 209 / 0.16) !important;
+    color: #00BAD1 !important;
+}
+
+.css-kq3jq9-MuiChip-root {
+    border-radius: 4px !important;
+    color: #7367F0 !important;
+    background-color: rgb(115 103 240 / 0.16) !important;
+}
+
+.css-16shq29-MuiChip-root {
+    border-radius: 4px !important;
+    color: #28C76F !important;
+    background-color: rgb(40 199 111 / 0.16) !important;
+}
+
+.user_pro_cont {
+   
+    max-width: 1200px;
+    /* Limit the maximum width of the header */
+    margin: 0 auto;
+}
+
+@media (max-width:1024px) {
+    .css-18hg92d {
+        gap: 30px !important;
+    }
+
+    .css-2ulfj5-MuiTypography-root {
+        font-size: 0.8375rem !important;
+    }
+
+    .css-1mrnscz-MuiTypography-root {
+        font-size: 0.8975rem !important;
+    }
+
+    .name_user {
+        font-size: 0.7375rem !important;
+    }
+
+    .badge-developer {
+        font-size: 0.7rem !important;
+        height: 22px;
+    }
+
+    .badge-support {
+        font-size: 0.7rem !important;
+        height: 22px;
+    }
+
+    .badge-designer {
+        font-size: 0.7rem !important;
+        height: 22px;
+    }
+
+    .badge-marketing {
+        font-size: 0.7rem !important;
+        height: 22px;
+    }
+}
+
+@media (max-width:991px) {
+    .css-16sgr8b-MuiGrid-root>.MuiGrid-item {
+        padding-left: 0px !important;
+    }
+
+
+}
+
+@media (max-width:767px) {
+    .css-jpln7h-MuiTabs-scroller {
+        overflow-x: scroll !important;
+        scrollbar-width: none !important;
+    }
+
+    .custom-flex-container {
+        display: block !important;
+        text-align: center;
+    }
+
+    .pro_name {
+        margin: auto !important;
+        text-align: center;
+    }
+
+    .res_cls {
+        gap: 20px !important;
+        margin-bottom: 15px;
+    }
+
+    .res_dis {
+        display: block !important;
+    }
+
+    .css-ahj2mt-MuiTypography-root {
+        font-size: 0.8rem !important;
+    }
+
+    .css-10wpov9-MuiTypography-root {
+        font-size: 0.9rem !important;
+    }
+
+    .css-zow5z4-MuiGrid-root {
+        width: auto !important;
+        margin-left: 0px !important;
+    }
+
+    .css-19kzrtu {
+        padding: 0px !important;
+        padding-top: 20px !important;
+    }
+
+    .css-zow5z4-MuiGrid-root>.MuiGrid-item {
+        padding-left: 0px !important;
+    }
+
+    .MuiGrid-root.MuiGrid-container.MuiGrid-item.MuiGrid-spacing-xs-3.MuiGrid-direction-xs-column.MuiGrid-grid-xs-12.MuiGrid-grid-md-4.res_padding.css-cp845p-MuiGrid-root {
+        padding-left: 20px !important;
+    }
+
+    .MuiGrid-root.MuiGrid-container.MuiGrid-item.MuiGrid-spacing-xs-3.MuiGrid-direction-xs-column.MuiGrid-grid-xs-12.MuiGrid-grid-md-8.grid_right.res_padding.css-16sgr8b-MuiGrid-root {
+        padding-left: 20px !important;
+    }
+
+    .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-6.MuiGrid-grid-md-4.css-11l5t4l-MuiGrid-root {
+        padding-right: 10px !important;
+    }
+
+    .css-18hg92d {
+        gap: 10px !important;
+    }
+}

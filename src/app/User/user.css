@@ -1,0 +1,417 @@
+.groupuser {
+    color: #7367F0;
+    font-size: 26px;
+}
+
+.useradd {
+    font-size: 26px;
+    color: #FF4C51;
+}
+
+.usercheck {
+    font-size: 26px;
+    color: #28C76F;
+}
+
+.usersearch {
+    font-size: 26px;
+    color: #FF9F43;
+}
+
+.cardtitle {
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    color: rgb(47 43 61 / 0.9);
+}
+
+.cardvalue {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.58334;
+    color: rgb(47 43 61 / 0.9);
+    font-family: "Public Sans", sans-serif !important;
+}
+
+.css-7uv2bi-MuiTypography-root {
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    color: #28C76F !important;
+}
+
+.css-1hx6qrq-MuiTypography-root {
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667 !important;
+    color: #FF4C51 !important;
+}
+
+.subtitle {
+    font-family: "Public Sans", sans-serif !important;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.53846154;
+
+}
+
+.css-1vho6rh-MuiPaper-root-MuiTableContainer-root {
+    background-color: none !important;
+    border-radius: none !important;
+    box-shadow: none !important;
+}
+
+.css-s1ix2f-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 9.5px 14px !important;
+}
+
+.css-559dlt-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    border-radius: 6px !important;
+}
+
+.css-mhc70k-MuiGrid-root {
+    padding-bottom: 16px !important;
+}
+
+.paginationgrid {
+    padding-top: 16px;
+}
+
+.css-9mgopn-MuiDivider-root {
+    border-color: rgb(46 43 43 / 37%) !important;
+}
+
+.css-16u2beb-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    border-radius: 7px;
+    min-width: 74px;
+}
+
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 7.5px 35px 7.5px 20px !important;
+}
+
+.css-ksdr3d-MuiButtonBase-root-MuiButton-root {
+    color: #808390 !important;
+    background-color: rgb(128 131 144 / 0.16) !important;
+    padding: 7.5px 20px 7.5px 20px !important;
+    border-radius: 6px !important;
+    height: 38px !important;
+    border-color: #808390 !important;
+}
+
+.css-1s6j93g-MuiButtonBase-root-MuiButton-root {
+    background-color: rgb(103, 92, 216) !important;
+    box-shadow: 0px 2px 6px rgb(115 103 240 / 0.3) !important;
+    color: #fff;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+    padding: 0.5rem 1.25rem !important;
+    height: 38px !important;
+}
+
+.css-1jawngh-MuiButtonBase-root-MuiButton-root {
+    color: #808390 !important;
+    background-color: rgb(128 131 144 / 0.16) !important;
+    border-radius: 4px;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: none !important;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+}
+
+.css-1credri-MuiButtonBase-root-MuiButton-root {
+    color: #FF9F43 !important;
+    background-color: rgb(255 159 67 / 0.16) !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+}
+
+.css-1gq8mrb-MuiButtonBase-root-MuiButton-root {
+    color: #28C76F !important;
+    background-color: rgb(40 199 111 / 0.16) !important;
+    font-weight: 500 !important;
+    font-size: 0.8125rem !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+
+}
+
+.css-hbzyj9-MuiTablePagination-root .MuiTablePagination-displayedRows {
+    margin-right: auto;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1 !important;
+    color: black;
+}
+
+.MuiTablePagination-root {
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.pagination-actions {
+    display: flex !important;
+    align-items: center;
+    gap: 3px !important;
+}
+
+.css-1drgtl0-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(73 70 95 / 80%);
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+
+    font-size: 0.9882rem !important;
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    width: 35px;
+    background-color: #80808014;
+    border-radius: 4px !important;
+    margin-right: 5px !important;
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+    /* background-color: transparent; */
+    color: rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    background-color: #80808014;
+    margin-right: 6px;
+}
+
+.css-hbzyj9-MuiTablePagination-root .pagination-actions .MuiIconButton-root.active {
+    background-color: #7C4DFF !important;
+    color: white !important;
+    border-radius: 10px !important;
+    width: 35px !important;
+    height: 38px !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 6.5px 14px !important;
+}
+
+.css-ojmka6-MuiFormLabel-root-MuiInputLabel-root {
+    font-family: "Public Sans", sans-serif !important;
+    transform: none;
+    width: fit-content;
+    max-width: 100%;
+    line-height: 1.153;
+    position: relative;
+    font-size: 0.8125rem !important;
+    margin-bottom: 0.25rem !important;
+    color: rgb(47 43 61 / 0.9) !important;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    font-weight: 400;
+    font-size: 0.9375rem !important;
+    line-height: 1.46667;
+    color: rgb(47 43 61 / 0.9) !important;
+}
+
+.cancelbtn {
+    background-color: rgb(255 76 81 / 0.16) !important;
+    color: #FF4C51 !important;
+    box-shadow: none !important;
+    border-radius: 6px !important
+}
+
+.submitbtn {
+    border-radius: 6px !important;
+}
+
+.css-ed5433-MuiTableCell-root {
+    font-family: "Public Sans", sans-serif !important;
+
+}
+
+.css-9ygqke-MuiTypography-root {
+    font-family: "Public Sans", sans-serif !important;
+}
+
+.css-1mrnscz-MuiTypography-root {
+    font-family: "Public Sans", sans-serif !important;
+}
+
+.css-e68yl-MuiTypography-root {
+    font-family: "Public Sans", sans-serif !important;
+}
+
+.css-21z0fo-MuiTableCell-root {
+    font-family: "Public Sans", sans-serif !important;
+}
+
+.css-wz2iqy-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-wz2iqy-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #7C4DFF !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    font-family: "Public Sans", sans-serif !important;
+}
+
+/* Dark theme css */
+
+.css-1lplqdb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 8.5px 14px !important;
+}
+
+.css-oh4f6s {
+    flex-direction: row !important;
+}
+
+.css-1fxags-MuiButtonBase-root-MuiButton-root {
+    background-color: #7C4DFF !important;
+    color: #fff !important;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+    border-radius: 6px !important;
+}
+
+.css-1fxags-MuiButtonBase-root-MuiButton-root:not(.Mui-disabled) {
+    box-shadow: 0px 2px 6px rgb(115 103 240 / 0.3) !important;
+}
+
+.css-107je3y-MuiButtonBase-root-MuiButton-root {
+    color: #808390 !important;
+    background-color: rgb(128 131 144 / 0.16) !important;
+    border-radius: 6px !important;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border-color: #808390 !important;
+    border: 1px solid #808390 !important;
+}
+
+.css-107je3y-MuiButtonBase-root-MuiButton-root:hover {
+    border: 1px solid #808390 !important;
+}
+
+.css-jejly7-MuiButtonBase-root-MuiButton-root {
+    color: #808390 !important;
+    background-color: rgb(128 131 144 / 0.16) !important;
+    font-size: 0.7520rem !important;
+    border-radius: 6px !important;
+}
+
+.css-1y2fafw-MuiButtonBase-root-MuiButton-root {
+    color: #FF9F43 !important;
+    background-color: rgb(255 159 67 / 0.16) !important;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border-radius: 6px !important;
+    font-size: 0.7520rem !important;
+}
+
+.css-1tt51qp-MuiButtonBase-root-MuiButton-root {
+    border-radius: 6px !important;
+    font-size: 0.7520rem !important;
+    color: #28c76f !important;
+    background-color: rgb(40 199 111 / 0.16) !important;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+
+.css-1lhjddt-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-1lhjddt-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #7C4DFF !important;
+}
+
+.css-193i3iw-MuiTablePagination-root .MuiTablePagination-displayedRows {
+    order: -1 !important;
+}
+
+.css-1drgtl0-MuiButtonBase-root-MuiIconButton-root {
+    border-radius: 10% !important;
+}
+
+.css-193i3iw-MuiTablePagination-root .pagination-actions .MuiIconButton-root.active {
+    background-color: #7C4DFF !important;
+    color: #fff !important;
+}
+
+.submitbtn {
+    background-color: #7C4DFF !important;
+    color: #fff !important;
+}
+
+.css-p51h6s-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 7.5px 14px !important;
+}
+
+
+
+@media (max-width:991px) {
+    .css-21z0fo-MuiTableCell-root {
+        padding: 5px !important;
+    }
+
+    .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+        padding: 2px !important;
+    }
+
+    .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+        margin-right: 0px !important;
+    }
+
+    /* dark theme  */
+    .css-8prnfn-MuiButtonBase-root-MuiIconButton-root {
+        padding: 3px !important;
+    }
+
+    .css-4xl1zx-MuiTableCell-root {
+        padding: 5px !important;
+    }
+
+    .css-1drgtl0-MuiButtonBase-root-MuiIconButton-root {
+        padding: 5px !important;
+    }
+}
+
+@media(max-width:768px) {
+    .css-21z0fo-MuiTableCell-root {
+        padding: 5px !important;
+    }
+
+    .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+        padding: 2px !important;
+    }
+
+    .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+        margin-right: 0px !important;
+    }
+
+    .css-glbehn {
+        width: 330px !important;
+    }
+
+    .css-feppfp {
+        width: 340px !important;
+    }
+
+    .css-8prnfn-MuiButtonBase-root-MuiIconButton-root {
+        padding: 3px !important;
+    }
+
+    /* dark theme */
+    .css-4xl1zx-MuiTableCell-root {
+        padding: 3px !important;
+    }
+}
+
+@media (max-width:667px) {
+    .css-txiii3 {
+        flex-direction: column !important;
+    }
+
+    /* dark theme */
+    .css-oh4f6s {
+        flex-direction: column !important;
+    }
+
+    .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+        display: block !important;
+    }
+}

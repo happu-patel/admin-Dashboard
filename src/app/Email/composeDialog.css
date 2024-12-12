@@ -1,0 +1,45 @@
+.css-953pxc-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before {
+    border-bottom: none !important;
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root::before {
+    border-bottom: none !important;
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root::after {
+    border-bottom: none !important;
+}
+
+.css-5ax1kt {
+    border-bottom: 1px solid #c2bdbd87 !important;
+}
+
+.ccInput {
+    border-bottom: 1px solid #c2bdbd87 !important;
+}
+
+.subject {
+    border-bottom: 1px solid #c2bdbd87 !important;
+}
+
+.bccInput {
+    border-bottom: 1px solid #c2bdbd87 !important;
+}
+
+.css-kk2ycy-MuiButtonBase-root-MuiButton-root {
+    min-width: 20px !important;
+    color: rgb(47 43 61 / 0.7) !important;
+}
+
+.css-yiavyu-MuiBackdrop-root-MuiDialog-backdrop {
+    background-color: rgb(239 230 230 / 8%) !important;
+    top: auto !important;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    height: auto;
+    inset-inline-start: auto;
+    inset-inline-end: 1.5rem;
+    inset-block-end: 1.5rem;
+    z-index: 12;
+}

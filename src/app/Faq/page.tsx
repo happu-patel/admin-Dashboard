@@ -25,6 +25,7 @@ import Image from "next/image";
 import faq1 from "@/images/faq 1.png";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
+import { JSX } from "react/jsx-runtime";
 
 function Faq(): JSX.Element {
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);

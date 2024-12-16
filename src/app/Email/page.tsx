@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react'
-import { Box, List, ListItem, ListItemText, ListItemIcon, Divider, Typography, IconButton, InputBase, Avatar, Button, Badge, Paper, Checkbox, Tooltip, Chip, CircularProgress, Menu, MenuItem, Drawer,Backdrop } from '@mui/material'
+import { Box, List, ListItem, ListItemText, ListItemIcon, Divider, Typography, IconButton, InputBase, Avatar, Button, Badge, Paper, Checkbox, Tooltip, Chip, CircularProgress, Menu, MenuItem, Drawer, Backdrop, ListItemButton } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import '../globals.css'
 import styles from '../page.module.css'
@@ -82,8 +82,9 @@ interface EmailItemProps {
     time: string;
     isStarred: boolean;
     color: string;
-    labels?: string[];
+    labels: string[];
     content: string;
+    isSpam?: boolean;
     onClick: (email: EmailItemProps) => void;
     onToggleStar: (id: number) => void;
     onToggleSelect: (id: number) => void;
@@ -126,21 +127,55 @@ const EmailItem: React.FC<EmailItemProps> = ({
     onToggleSelect,
     onMoveToTrash,
     onMoveToSpam,
-    onMoveToDraft,
-    onMarkAsUnread,
     selected,
     isRead,
-    onToggleReadStatus
+    onToggleReadStatus,
 }) => {
-    const labelColor = getLabelColor(labels);
+    const labelColor = getLabelColor(labels[0]);
     return (
-
-        <EmailItemWrapper
-            button
-            isRead={isRead}
-            onClick={(e) => {
-                if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'svg' && e.target.tagName !== 'path') {
-                    onClick({ id, sender, subject, time, isStarred, color, content, labels, isRead, senderEmail });
+        
+        <ListItemButton
+            component="div"
+            onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+                const target = e.target as HTMLElement;
+                if (target.tagName !== 'INPUT' && target.tagName !== 'svg' && target.tagName !== 'path') {
+                    onClick({
+                        id,
+                        sender,
+                        subject,
+                        time,
+                        isStarred,
+                        color,
+                        content,
+                        labels,
+                        isRead,
+                        senderEmail,
+                        onClick: function (email: EmailItemProps): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        onToggleStar: function (id: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        onToggleSelect: function (id: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        onMoveToTrash: function (id: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        onMoveToSpam: function (id: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        onMoveToDraft: function (id: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        onMarkAsUnread: function (id: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        selected: false,
+                        onToggleReadStatus: function (id: number): void {
+                            throw new Error('Function not implemented.')
+                        }
+                    });
                 }
             }}
             sx={{ py: 1 }}
@@ -159,9 +194,7 @@ const EmailItem: React.FC<EmailItemProps> = ({
                         onToggleStar(id);
                     }}
                 >
-                    <StarIcon
-                        style={{ color: isStarred ? "#ff9800" : "#9e9e9e" }}
-                    />
+                    <StarIcon style={{ color: isStarred ? "#ff9800" : "#9e9e9e" }} />
                 </IconButton>
             </ListItemIcon>
             <ListItemIcon>
@@ -200,9 +233,7 @@ const EmailItem: React.FC<EmailItemProps> = ({
                     </Box>
                 }
             />
-
-
-            <EmailActions className="actions">
+            <Box className="actions">
                 <Tooltip title={isRead ? "Mark as Unread" : "Mark as Read"}>
                     <IconButton
                         onClick={(e) => {
@@ -229,12 +260,13 @@ const EmailItem: React.FC<EmailItemProps> = ({
                         <SpamIcon />
                     </IconButton>
                 </Tooltip>
-            </EmailActions>
-        </EmailItemWrapper>
+            </Box>
+        </ListItemButton>
+
     );
 }
 type Email = {
-    id: number;
+    id: number; 
     sender: string;
     subject: string;
     time: string;
@@ -243,7 +275,7 @@ type Email = {
     content: string;
     folder: 'inbox' | 'sent' | 'trash' | 'spam' | 'starred' | 'draft';
     isRead: boolean;
-    isSpam: boolean;
+    isSpam?: boolean;
     labels: string[];
     senderEmail: string;
 };
@@ -262,7 +294,7 @@ function Email() {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const [emailLabels, setEmailLabels] = React.useState<{ [key: number]: string[] }>({}); // State for email labels
     const [unreadCountSpam, setUnreadCountSpam] = useState(0);
-    const [emails, setEmails] = useState([
+    const [emails, setEmails] = useState<Email[]>([
         {
             id: 1,
             sender: "Hettie Mcerlean",
@@ -325,7 +357,8 @@ function Email() {
             content: "Dear Valued Customer,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nAfter months of research, development, and testing, we've enhanced our products to provide you with an even better experience. Our team has worked tirelessly to incorporate customer feedback and the latest technological advancements into this new line.\n\nKey improvements include:\n1. Enhanced durability\n2. Improved user interface\n3. New features [List specific features]\n4. Better energy efficiency\n\nAs a loyal customer, we're offering you an exclusive preview and the opportunity to be among the first to experience these improvements.\n\nVisit our website to learn more about the new features and to place your order.\n\nThank you for your continued support.\n\nBest regards,\nEmmalynn Ramelot\nProduct Development Team",
             folder: 'draft',
             isRead: true,
-            labels: ['Company']
+            labels: ['Company'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 6,
@@ -337,7 +370,8 @@ function Email() {
             content: "Hi John,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nShopify Tutorials That Will Save You 5 Hours of Time and $150 A Month!\n\nCan I Start My Own ECommerce Business Without Knowing How To Code?\n\nThe One Thing All Shopify Entrepreneurs Have in Common\n\n Regrads,\n\nTommy Sicilia",
             folder: 'inbox',
             isRead: true,
-            labels: ['Important']
+            labels: ['Important'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 7,
@@ -349,7 +383,8 @@ function Email() {
             content: "Hi John,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nShopify Tutorials That Will Save You 5 Hours of Time and $150 A Month!\n\nCan I Start My Own ECommerce Business Without Knowing How To Code?\n\nThe One Thing All Shopify Entrepreneurs Have in Common\n\n Regrads,\n\nTommy Sicilia",
             folder: 'inbox',
             isRead: true,
-            labels: ['Company']
+            labels: ['Company'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 8,
@@ -361,7 +396,8 @@ function Email() {
             content: "Hi John,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nShopify Tutorials That Will Save You 5 Hours of Time and $150 A Month!\n\nCan I Start My Own ECommerce Business Without Knowing How To Code?\n\nThe One Thing All Shopify Entrepreneurs Have in Common\n\n Regrads,\n\nTommy Sicilia",
             folder: 'draft',
             isRead: true,
-            labels: ['Private']
+            labels: ['Private'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 9,
@@ -373,7 +409,8 @@ function Email() {
             content: "Hi John,\n\nMay you are blessed with more and more books. Happy National Book Lover’s Day to you.\n\n Regrads,\n\nEugenie Finessy",
             folder: 'sent',
             isRead: true,
-            labels: ['Personal']
+            labels: ['Personal'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 10,
@@ -385,7 +422,8 @@ function Email() {
             content: "Hi John,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nShopify Tutorials That Will Save You 5 Hours of Time and $150 A Month!\n\nCan I Start My Own ECommerce Business Without Knowing How To Code?\n\nThe One Thing All Shopify Entrepreneurs Have in Common\n\n Regrads,\n\nTommy Sicilia",
             folder: 'sent',
             isRead: true,
-            labels: ['Important']
+            labels: ['Important'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 11,
@@ -397,7 +435,8 @@ function Email() {
             content: "Hi John,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nShopify Tutorials That Will Save You 5 Hours of Time and $150 A Month!\n\nCan I Start My Own ECommerce Business Without Knowing How To Code?\n\nThe One Thing All Shopify Entrepreneurs Have in Common\n\n Regrads,\n\nTommy Sicilia",
             folder: 'spam',
             isRead: true,
-            labels: ['Personal']
+            labels: ['Personal'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 12,
@@ -409,7 +448,8 @@ function Email() {
             content: "Hi John,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nShopify Tutorials That Will Save You 5 Hours of Time and $150 A Month!\n\nCan I Start My Own ECommerce Business Without Knowing How To Code?\n\nThe One Thing All Shopify Entrepreneurs Have in Common\n\n Regrads,\n\nTommy Sicilia",
             folder: 'spam',
             isRead: true,
-            labels: ['Personal']
+            labels: ['Personal'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 13,
@@ -421,7 +461,8 @@ function Email() {
             content: "Hi John,\n\nWe are thrilled to announce the launch of our newly improved product line!\n\nShopify Tutorials That Will Save You 5 Hours of Time and $150 A Month!\n\nCan I Start My Own ECommerce Business Without Knowing How To Code?\n\nThe One Thing All Shopify Entrepreneurs Have in Common\n\n Regrads,\n\nTommy Sicilia",
             folder: 'spam',
             isRead: false,
-            labels: ['Company']
+            labels: ['Company'],
+            senderEmail: "robin.gen@example.com"
         },
         {
             id: 14,
@@ -433,7 +474,8 @@ function Email() {
             content: "Hello John,,\n\nI hope you are doing well.\n\nI am sending over a company report for company. It is a PDF file.\n\nPlease let me know if you want to schedule a call or any other questions.\n\nRegrads,\n\nTressa Gass",
             folder: 'inbox',
             isRead: false,
-            labels: ['Company', 'Private']
+            labels: ['Company', 'Private'],
+            senderEmail: "robin.gen@example.com"
         },
     ]);
 
@@ -694,13 +736,16 @@ function Email() {
     };
 
     const handleDeleteEmail = () => {
-        // Perform delete logic here, e.g., make an API call or update the state
-        // Example: Remove the selected email from the email list state
+        // Check if selectedEmail is not null before attempting to access its id
+        if (selectedEmail) {
+            // Perform delete logic here, e.g., make an API call or update the state
+            setEmails((prevEmails) => prevEmails.filter((email) => email.id !== selectedEmail.id));
 
-        setEmails((prevEmails) => prevEmails.filter((email) => email.id !== selectedEmail.id));
-
-        // Clear the selected email after deletion
-        setSelectedEmail(null);
+            // Clear the selected email after deletion
+            setSelectedEmail(null);
+        } else {
+            console.warn("No email selected for deletion."); // Optional: Add a log for better debugging
+        }
     };
     const handleToggleAllReadStatus = () => {
         if (selectedEmail) {
@@ -807,7 +852,10 @@ function Email() {
                                         anchor="left"
                                         variant="persistent"
                                         open={isDrawerOpen}
-                                        onClose={toggleDrawer(false)}
+                                        onClose={(event, reason) => {
+                                            // Call your toggle function here, e.g., toggleDrawer(false)
+                                            toggleDrawer(false);
+                                        }}
                                         sx={{
                                             display: { xs: 'block', sm: 'block', md: 'none' },
                                             '& .MuiDrawer-paper': {
@@ -913,7 +961,7 @@ function Email() {
                                     </Drawer>
 
                                     {/* Sidebar Content for Desktop View */}
-                                    <Box sx={{ display: { xs: 'none', sm: 'none',md:'block' } }}>
+                                    <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
                                         <Box sx={{ width: 250 }}>
                                             {/* The rest of your sidebar content */}
                                             <Box sx={{ p: 2 }}>
@@ -1021,7 +1069,7 @@ function Email() {
                                                     aria-label="open drawer"
                                                     edge="start"
                                                     onClick={toggleDrawer(true)}
-                                                    sx={{ display: { xs: 'block', sm: 'block',md:'none',lg:'none'} }}
+                                                    sx={{ display: { xs: 'block', sm: 'block', md: 'none', lg: 'none' } }}
                                                 >
                                                     <MenuIcon />
                                                 </IconButton>

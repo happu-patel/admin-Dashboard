@@ -46,6 +46,7 @@ interface TableRowData {
     recentActivity: string;
     icon: React.ReactNode;
 }
+
 const data: TableRowData[] = [
     {
         browser: "Chrome on Windows",
@@ -116,7 +117,7 @@ function Setting() {
     const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
     const [tabValue, setTabValue] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
     const [selectedLanguages, setSelectedLanguages] = useState(['English', 'Arabic']);
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const [timeZone, setTimeZone] = useState('');
@@ -284,10 +285,10 @@ function Setting() {
     const handleReset = () => {
         setSelectedImage(null); // Reset the image to default (null state)
     };
-    const [city, setCity] = useState<string>("USA"); // Default value is "USA"
+    const [city, setCity] = React.useState<string>('');
 
-    const handleChange = (event: SelectChangeEvent<{ value: unknown }>) => {
-        setCity(event.target.value as string);
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setCity(event.target.value);
     };
 
     const handleDropdownToggle = () => {
@@ -566,27 +567,26 @@ function Setting() {
                                                                             fullWidth
                                                                             size="small"
                                                                             value={city}
-                                                                            open={isDropdownOpen} // Control the open state manually
-                                                                            onOpen={() => setIsDropdownOpen(true)} // Set to true when dropdown opens
-                                                                            onClose={() => setIsDropdownOpen(false)}
-                                                                            MenuProps={{
+                                                                            onChange={handleChange}
+                                                                            select // This turns the TextField into a dropdown
+                                                                            SelectProps={{
+                                                                            MenuProps:{
                                                                                 PaperProps: {
                                                                                     style: {
                                                                                         maxHeight: 200, // Optional: set max height for dropdown
                                                                                     },
                                                                                 },
+                                                                                },
                                                                             }}
-                                                                            onChange={handleChange}
-                                                                            select
                                                                             InputProps={{
                                                                                 endAdornment: (
-                                                                                    <InputAdornment position="end" style={{ cursor: "pointer" }}>
-                                                                                        {isDropdownOpen ? <ExpandMore /> : <ExpandMore onClick={handleDropdownToggle} />}
+                                                                                    <InputAdornment position="end" style={{ cursor: "pointer" }} onClick={handleDropdownToggle}>
+                                                                                        {isDropdownOpen ? <ExpandMore /> : <ExpandMore />}
                                                                                     </InputAdornment>
                                                                                 ),
                                                                                 style: { borderRadius: "8px" }, // Adjusts border-radius for the input
-
                                                                             }}
+
                                                                         >
                                                                             <MenuItem value="USA">USA</MenuItem>
                                                                             <MenuItem value="Uk">UK</MenuItem>
@@ -806,7 +806,7 @@ function Setting() {
                                         </Grid>
 
                                     </TabPanel>
-                                    <TabPanel value={tabValue} index={1}>
+                                    <TabPanel value={tabValue} index={1}> 
                                         <Grid container spacing={6}>
                                             <Grid item xs={12}>
                                                 <Card className="main_card">

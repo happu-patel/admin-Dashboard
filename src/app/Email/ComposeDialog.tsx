@@ -227,7 +227,7 @@ const ComposeDialog: React.FC<ComposeDialogProps> = ({ open, onClose }) => {
                                     backgroundColor: activeFormatting.alignCenter ? "action.selected" : "transparent",
                                 }}
                             >
-                                <TbAlignCenter />
+                                <TbAlignCenter /> 
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="Align Right">
@@ -238,8 +238,8 @@ const ComposeDialog: React.FC<ComposeDialogProps> = ({ open, onClose }) => {
                                     backgroundColor: activeFormatting.alignRight ? "action.selected" : "transparent",
                                 }}
                             >
-                                <TbAlignRight />
-                            </IconButton>
+                                <TbAlignRight /> 
+                            </IconButton>      
                         </Tooltip>
                         <Tooltip title="Justify">
                             <IconButton
@@ -262,7 +262,7 @@ const ComposeDialog: React.FC<ComposeDialogProps> = ({ open, onClose }) => {
                             padding: '8px',
                             minHeight: '200px',
                             width: '100%',
-                            overflowY: 'auto',
+                            overflowY: 'auto',    
                             outline: 'none',
                             borderRadius: '4px',
                         }}

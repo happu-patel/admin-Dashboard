@@ -2,20 +2,23 @@ import React, { createContext, useState, useMemo, useEffect } from 'react';
 import { ThemeProvider as MUIThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-export const ColorModeContext = createContext({ toggleColorMode: () => { } });
+// Create a context for color mode with a default function
+export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [mode, setMode] = useState<'light' | 'dark'>('light');
 
-    // Check if window is defined (indicating we are in the browser)
     useEffect(() => {
+        // This code runs only in the browser
         if (typeof window !== 'undefined') {
-            const savedMode = localStorage.getItem('themeMode');
-            setMode((savedMode as 'light' | 'dark') || 'light');
+            const savedMode = localStorage.getItem('themeMode') as 'light' | 'dark' | null;
+            // Set the initial mode based on localStorage or default to 'light'
+            setMode(savedMode === 'light' || savedMode === 'dark' ? savedMode : 'light');
         }
     }, []);
 
     useEffect(() => {
+        // Save the current mode to localStorage only in the browser
         if (typeof window !== 'undefined') {
             localStorage.setItem('themeMode', mode);
         }
@@ -25,6 +28,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         toggleColorMode: () => {
             setMode((prevMode) => {
                 const newMode = prevMode === 'light' ? 'dark' : 'light';
+                // Only access localStorage in the browser
                 if (typeof window !== 'undefined') {
                     localStorage.setItem('themeMode', newMode);
                 }
@@ -33,7 +37,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         },
     }), []);
 
-    const theme = useMemo(() =>
+    // Create the theme based on the current mode
+    const theme = useMemo(() => 
         createTheme({
             palette: {
                 mode,

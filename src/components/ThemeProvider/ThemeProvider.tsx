@@ -7,11 +7,12 @@ export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [mode, setMode] = useState<'light' | 'dark'>('light');
 
-    // Check if window is defined (indicating we are in the browser)
     useEffect(() => {
+        // Check if window is defined (indicating we are in the browser)
         if (typeof window !== 'undefined') {
-            const savedMode = localStorage.getItem('themeMode');
-            setMode((savedMode as 'light' | 'dark') || 'light');
+            const savedMode = localStorage.getItem('themeMode') as 'light' | 'dark' | null;
+            // Initialize mode from local storage or default to 'light'
+            setMode(savedMode === 'light' || savedMode === 'dark' ? savedMode : 'light');
         }
     }, []);
 
@@ -25,6 +26,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         toggleColorMode: () => {
             setMode((prevMode) => {
                 const newMode = prevMode === 'light' ? 'dark' : 'light';
+                // Only access localStorage in the browser
                 if (typeof window !== 'undefined') {
                     localStorage.setItem('themeMode', newMode);
                 }

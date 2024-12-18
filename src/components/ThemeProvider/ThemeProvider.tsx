@@ -1,13 +1,13 @@
 import React, { createContext, useState, useMemo, useEffect } from 'react';
-import { ThemeProvider as MUIThemeProvider, createTheme, PaletteMode } from '@mui/material/styles';
+import { ThemeProvider as MUIThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [mode, setMode] = useState<PaletteMode>(() => {
+    const [mode, setMode] = useState<'light' | 'dark'>(() => {
         const savedMode = localStorage.getItem('themeMode');
-        return (savedMode as PaletteMode) || 'light';
+        return (savedMode as 'light' | 'dark') || 'light';
     });
 
     useEffect(() => {

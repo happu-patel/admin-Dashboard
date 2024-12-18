@@ -69,7 +69,7 @@ const BasicTimeline: React.FC<BasicTimeline> = ({ themeMode }) => {
                     title={<Typography style={{ color: getTextColor() }}>Activity Timeline</Typography>}
                 />
                 <CardContent className='timeline_card'>
-                    <Timeline align="right">
+                    <Timeline>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot color="secondary" />

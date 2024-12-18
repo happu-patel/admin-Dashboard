@@ -71,7 +71,7 @@ const RadarChart: React.FC<RadarChart> = ({ themeMode }) => {
                                 text: 'Sales',
                                 font: {
                                     size: 16,
-                                    weight: '400',
+                                    weight: 'bolder',
                                 },
                                 align: 'start' // Align the title to the left
                             },

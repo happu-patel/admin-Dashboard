@@ -1,9 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import ApexCharts from 'apexcharts';
-import './orderchart.css';
 
-const OrderChart = ({ theme }) => {
-    const chartRef = useRef(null);
+interface OrderChartProps {
+    theme: 'dark' | 'light';
+}
+
+const OrderChart: React.FC<OrderChartProps> = ({ theme }) => {
+    const chartRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         if (!chartRef.current) return;
@@ -11,77 +14,93 @@ const OrderChart = ({ theme }) => {
         const isDark = theme === 'dark';
 
         const chartOptions = {
-            series: [{
-                data: [88, 35, 25, 63, 90, 75, 100]
-            }],
+            series: [
+                {
+                    data: [88, 35, 25, 63, 90, 75, 100],
+                },
+            ],
             chart: {
                 type: 'bar',
                 height: 70,
                 toolbar: {
-                    show: false
+                    show: false,
                 },
                 sparkline: {
-                    enabled: true
+                    enabled: true,
                 },
-                responsive: [{
-                    breakpoint: 400,
-                    options: {
-                        chart: {
-                            width: '80%'  // Adjust this value as needed
-                        }
-                    }
-                }]
+                responsive: [
+                    {
+                        breakpoint: 400,
+                        options: {
+                            chart: {
+                                width: '80%', // Adjust width for smaller screens
+                            },
+                        },
+                    },
+                ],
             },
             plotOptions: {
                 bar: {
                     borderRadius: 3,
                     columnWidth: '30%',
-                }
+                },
             },
             colors: ['#7063f7'],
             dataLabels: {
-                enabled: false
+                enabled: false,
             },
             xaxis: {
                 categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                 axisBorder: {
-                    show: false
+                    show: false,
                 },
                 axisTicks: {
-                    show: false
+                    show: false,
                 },
                 labels: {
-                    show: false
-                }
+                    show: false,
+                },
             },
             yaxis: {
-                show: false
+                show: false,
             },
             grid: {
-                show: false
+                show: false,
             },
             tooltip: {
-                enabled: false
+                enabled: false,
             },
             theme: {
-                mode: isDark ? 'dark' : 'light'
+                mode: isDark ? 'dark' : 'light',
             },
             background: isDark ? '#2B2C40' : '#fff',
-            foreColor: isDark ? '#fff' : '#2B2C40'
+            foreColor: isDark ? '#fff' : '#2B2C40',
         };
 
         const chart = new ApexCharts(chartRef.current, chartOptions);
         chart.render();
 
-        // Cleanup
         return () => chart.destroy();
     }, [theme]);
 
     return (
-        <div className="order-chart-container">
+        <div
+            className="order-chart-container"
+            style={{
+                backgroundColor: theme === 'dark' ? '#2B2C40' : '#fff',
+                color: theme === 'dark' ? '#fff' : '#000',
+                borderRadius: '8px',
+                padding: '10px',
+            }}
+        >
             <div className="order-chart">
-                <div id="chart" ref={chartRef} />
-                <div className="chart-footer" style={{ color: theme === 'dark' ? '#E7E3FC99' : '#333' }}>
+                <div id="chart" ref={chartRef} aria-label="Order statistics chart" />
+                <div
+                    className="chart-footer"
+                    style={{
+                        color: theme === 'dark' ? '#E7E3FC99' : '#333',
+                    }}
+                >
                     <span className="total">124k</span>
                     <span className="growth">+12.6%</span>
                 </div>
@@ -89,12 +108,11 @@ const OrderChart = ({ theme }) => {
             <style jsx>{`
                 .order-chart-container {
                     width: 100%;
-                    max-width: 300px;  // Adjust this value as needed
+                    max-width: 300px;
                     margin: 0 auto;
                 }
                 .order-chart {
                     width: 100%;
-                    border-radius: 8px;
                 }
                 .chart-footer {
                     display: flex;
@@ -108,13 +126,12 @@ const OrderChart = ({ theme }) => {
                 .growth {
                     color: #28C76F;
                     font-weight: 400;
-                    padding: 8px 0px;
                     font-size: 0.9925rem;
                     line-height: 1.53846154;
                 }
                 @media (max-width: 400px) {
                     .order-chart-container {
-                        max-width: 80%;  // Adjust this value as needed
+                        max-width: 80%;
                     }
                     .total {
                         font-size: 20px;

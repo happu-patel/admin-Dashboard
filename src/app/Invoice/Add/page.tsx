@@ -345,8 +345,8 @@ function Add() {
     const [items, setItems] = useState<Item[]>([]);
     const [currentItem, setCurrentItem] = useState<Item>({ description: '', cost: 0, hours: 0, discount: 0 });
 
-    const [salesperson, setSalesperson] = useState();
-    const [thanksMessage, setThanksMessage] = useState();
+    const [salesperson, setSalesperson] = useState<string>("");
+    const [thanksMessage, setThanksMessage] = useState<string>("");
 
     const calculateTotals = () => {
         const subtotal = 1800;
@@ -473,7 +473,7 @@ function Add() {
 
                                                             </div>
                                                             <div className='d-flex align-items-center gap-3' style={{ padding: '5px 0px' }}>
-                                                                <h5 className='dlabel' sx={{ marginTop: '0px' }} style={{ minInlineSize: '95px' }}>Date issued:</h5>
+                                                                <h5 className='dlabel' style={{ minInlineSize: '95px',marginTop:'0px' }}>Date issued:</h5>
                                                                 <DatePicker
                                                                     value={issueDate}
                                                                     onChange={(newValue) => setIssueDate(newValue)}
@@ -687,7 +687,7 @@ function Add() {
                                                                     <span>21%</span>
                                                                 </Typography>
                                                                 <Divider sx={{ width: '100%', my: 1 }} />
-                                                                <Typography variant="span" sx={{ display: 'flex', gap: 4, width: '100%', fontWeight: 'bold', justifyContent: 'end' }}>
+                                                                <Typography variant="body1" sx={{ display: 'flex', gap: 4, width: '100%', fontWeight: 'bold', justifyContent: 'end' }}>
                                                                     <span className='total' style={{ color: theme.palette.mode === 'dark' ? '#E7E3FCDE' : "rgb( 47 43 61 / 0.9)" }}>Total:</span>
                                                                     <span>${total.toFixed(2)}</span>
                                                                 </Typography>
@@ -696,7 +696,7 @@ function Add() {
                                                     </Grid>
                                                     <Grid container spacing={2} sx={{ mt: 2 }}>
                                                         <Grid item xs={12}>
-                                                            <Typography variant="p">Note:</Typography>
+                                                            <Typography variant="body1">Note:</Typography>
                                                             <TextField
                                                                 value={note}
                                                                 onChange={handleNoteChange}

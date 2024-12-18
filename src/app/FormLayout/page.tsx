@@ -43,13 +43,13 @@ interface FormData {
     email: string;
     password: string;
     confirmPassword: string;
-    phone: Number;
+    phone: string;
     message: string;
     country: string;
     firstName: string;
     lastName: string;
-    phoneNumber: Number;
-    birthDate: Date;
+    phoneNumber: string;
+    birthDate: string;
     language: string;
     username: string;
     twitter: string;
@@ -71,14 +71,17 @@ interface FormData {
 function BasicForm() {
     const theme = useTheme();
     const [showPassword, setShowPassword] = useState(false);
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = React.useState(false);
 
     const handleClickShowPassword = () => setShowPassword((show) => !show);
-    const handleClickShowConfirmPassword = () => setShowConfirmPassword((show) => !show);
+    const handleClickShowConfirmPassword = () => {
+        setShowConfirmPassword(!showConfirmPassword);
+    };
 
     const {
         control,
         handleSubmit,
+        getValues,
         formState: { errors },
     } = useForm<FormData>();
 
@@ -127,12 +130,12 @@ function BasicForm() {
                             fullWidth
                             margin="normal"
                             placeholder="johndoe@gmail.com"
-                            helperText="You can use letters, numbers & periods"
-                            error={!!errors.email}
                             helperText={errors.email ? errors.email.message : "You can use letters, numbers & periods"}
+                            error={!!errors.email}
                         />
                     )}
                 />
+
                 <InputLabel sx={{ color: theme.palette.mode === 'dark' ? 'rgb(225 222 245 / 0.9)' : 'rgb(47 43 61 / 0.7)' }}>Password</InputLabel>
                 <Controller
                     name="password"
@@ -166,7 +169,8 @@ function BasicForm() {
                     defaultValue=""
                     rules={{
                         required: "Confirm Password is required",
-                        validate: (value) => value === control.getValues("password") || "Passwords do not match",
+                        validate: (value) =>
+                            value === getValues("password") || "Passwords do not match",
                     }}
                     render={({ field }) => (
                         <TextField
@@ -184,7 +188,11 @@ function BasicForm() {
                                 ),
                             }}
                             error={!!errors.confirmPassword}
-                            helperText={errors.confirmPassword ? errors.confirmPassword.message : "Make sure to type the same password as above"}
+                            helperText={
+                                errors.confirmPassword
+                                    ? errors.confirmPassword.message
+                                    : "Make sure to type the same password as above"
+                            }
                         />
                     )}
                 />
@@ -205,6 +213,7 @@ function IconForm() {
     const {
         control,
         handleSubmit,
+        getValues,
         formState: { errors },
     } = useForm<FormData>();
 
@@ -339,9 +348,9 @@ function IconForm() {
 }
 
 function MultiColumnForm() {
-    const { control, handleSubmit, reset } = useForm<FormData>();
+    const { control, handleSubmit, reset, getValues } = useForm<FormData>();
     const [showPassword, setShowPassword] = useState(false);
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = React.useState(false);
 
     const onSubmit = (data: FormData) => {
         console.log(data);
@@ -429,7 +438,13 @@ function MultiColumnForm() {
                         />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <InputLabel sx={{ color: theme.palette.mode === 'dark' ? 'rgb(225 222 245 / 0.9)' : 'rgb(47 43 61 / 0.7)' }}>Confirm Password</InputLabel>
+                        <InputLabel
+                            sx={{
+                                color: theme.palette.mode === "dark" ? "rgb(225 222 245 / 0.9)" : "rgb(47 43 61 / 0.7)",
+                            }}
+                        >
+                            Confirm Password
+                        </InputLabel>
                         <Controller
                             name="confirmPassword"
                             control={control}
@@ -437,7 +452,7 @@ function MultiColumnForm() {
                             rules={{
                                 required: "Confirm Password is required",
                                 validate: (value) =>
-                                    value === control.getValues("password") || "Passwords do not match"
+                                    value === getValues("password") || "Passwords do not match",
                             }}
                             render={({ field, fieldState: { error } }) => (
                                 <TextField
@@ -462,7 +477,7 @@ function MultiColumnForm() {
                             )}
                         />
                     </Grid>
-                </Grid>
+                </Grid> 
 
                 <Typography variant="subtitle2" gutterBottom sx={{ mt: 3, color: theme.palette.mode === 'dark' ? 'rgb(225 222 245 / 0.7)' : 'rgb(47 43 61 / 0.7)' }}>
                     2. Personal Info
@@ -599,9 +614,9 @@ function MultiColumnForm() {
 
 function FormWithTabs() {
     const [value, setValue] = useState(0);
-    const { control, handleSubmit } = useForm<FormData>();
+    const { control, handleSubmit,getValues } = useForm<FormData>();
     const [showPassword, setShowPassword] = useState(false);
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = React.useState(false);
     const theme = useTheme();
 
     const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
@@ -824,7 +839,7 @@ function FormWithTabs() {
                                     rules={{
                                         required: "Confirm Password is required",
                                         validate: (value) =>
-                                            value === control.getValues("password") || "Passwords do not match"
+                                            value === getValues("password") || "Passwords do not match",
                                     }}
                                     render={({ field, fieldState: { error } }) => (
                                         <TextField
@@ -975,7 +990,7 @@ function FormWithTabs() {
 };
 
 function CollapsibleForm() {
-    const { control, handleSubmit, formState: { errors } } = useForm<FormData>();
+    const { control, handleSubmit,getValues, formState: { errors } } = useForm<FormData>();
     const [paymentMethod, setPaymentMethod] = useState('credit-debit-atm');
 
     const handlePaymentMethodChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
@@ -1060,7 +1075,7 @@ function CollapsibleForm() {
                             <Controller
                                 name="zipCode"
                                 control={control}
-                                defaultValue=""
+                                defaultValue={0}
                                 rules={{ required: "ZIP Code is required" }}
                                 render={({ field }) => (
                                     <TextField

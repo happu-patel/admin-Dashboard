@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { useTheme } from '@mui/material/styles';
-import './saleschart.css'
+import './saleschart.css';
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
@@ -21,6 +21,7 @@ const SalesChart: React.FC<SalesChartProps> = ({ themeMode }) => {
             },
             width: '100%',
             height: 70,
+            // Remove the margin
         },
         stroke: {
             curve: 'smooth',
@@ -42,9 +43,6 @@ const SalesChart: React.FC<SalesChartProps> = ({ themeMode }) => {
         dataLabels: {
             enabled: false
         },
-        axisBorder: {
-            show: false
-        },
         xaxis: {
             labels: {
                 show: false
@@ -60,19 +58,15 @@ const SalesChart: React.FC<SalesChartProps> = ({ themeMode }) => {
         },
         grid: {
             show: false
-        },
-        padding: {
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0
         }
     };
 
-    const series: ApexAxisChartSeries = [{
-        name: 'Sales',
-        data: [80, 70, 85, 78]
-    }];
+    const series: ApexAxisChartSeries = [
+        {
+            name: 'Sales',
+            data: [80, 70, 85, 78]
+        }
+    ];
 
     return (
         <>
@@ -86,10 +80,26 @@ const SalesChart: React.FC<SalesChartProps> = ({ themeMode }) => {
                 />
             </div>
             <div className="sales-value">
-                <span className="value" style={{ color: theme.palette.mode === 'dark' ? theme.palette.text.primary : "rgb( 47 43 61 / 0.9)" }}>
+                <span
+                    className="value"
+                    style={{
+                        color:
+                            theme.palette.mode === 'dark'
+                                ? theme.palette.text.primary
+                                : "rgb( 47 43 61 / 0.9)"
+                    }}
+                >
                     175k
                 </span>
-                <span className="percentage" style={{ color: theme.palette.mode === 'dark' ? theme.palette.error.main : "#FF4560" }}>
+                <span
+                    className="percentage"
+                    style={{
+                        color:
+                            theme.palette.mode === 'dark'
+                                ? theme.palette.error.main
+                                : "#FF4560"
+                    }}
+                >
                     -16.2%
                 </span>
 
@@ -118,4 +128,3 @@ const SalesChart: React.FC<SalesChartProps> = ({ themeMode }) => {
 };
 
 export default SalesChart;
-

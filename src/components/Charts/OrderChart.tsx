@@ -87,7 +87,7 @@ const OrderChart: React.FC<OrderChartProps> = ({ theme }) => {
         <div
             className="order-chart-container"
             style={{
-                backgroundColor: theme === 'dark' ? '#2B2C40' : '#fff',
+                //backgroundColor: theme === 'dark' ? '#2B2C40' : '#fff',
                 color: theme === 'dark' ? '#fff' : '#000',
                 borderRadius: '8px',
                 padding: '10px',

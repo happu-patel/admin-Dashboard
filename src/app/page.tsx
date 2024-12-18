@@ -99,7 +99,7 @@ function Home() {
                         <Typography variant="h6" component="div" gutterBottom fontFamily='"Public Sans", sans-serif '>
                           Total Profit
                         </Typography>
-                        <Typography variant="body2" color="rgb( 47 43 61 / 0.4)" gutterBottom>
+                        <Typography variant="body2" style={{ color: theme.palette.mode === 'dark' ? '#E7E3FCDE' : 'rgb( 47 43 61 / 0.4)'}} gutterBottom>
                           Last Week
                         </Typography>
                         <Typography variant="h6" component="div" fontWeight="300" fontFamily='"Public Sans", sans-serif ' fontSize="1rem" marginBottom="0px">
@@ -142,7 +142,7 @@ function Home() {
                         <Typography variant="h6" component="div" gutterBottom fontFamily='"Public Sans", sans-serif '>
                           Total Sales
                         </Typography>
-                        <Typography variant="body2" color="rgb( 47 43 61 / 0.4)" gutterBottom>
+                        <Typography variant="body2" style={{ color: theme.palette.mode === 'dark' ? '#E7E3FCDE' : 'rgb( 47 43 61 / 0.4)' }} gutterBottom>
                           Last Week
                         </Typography>
                         <Typography variant="h6" component="div" fontWeight="300" fontFamily='"Public Sans", sans-serif ' fontSize="1rem">

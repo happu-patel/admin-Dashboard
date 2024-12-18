@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect, useState } from 'react';
-import { Chart, ChartType, ChartOptions } from 'chart.js/auto';
+import { Chart, ChartType, ChartOptions, ChartTypeRegistry } from 'chart.js/auto';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { TbChartBar, TbCurrencyDollar } from "react-icons/tb";
 import { PiClockBold } from "react-icons/pi";
@@ -65,8 +65,11 @@ const EarningsChart: React.FC<EarningsChartProps> = ({ themeMode }) => {
                         ticks: {
                             font: {
                                 size: 10,
-                                color: themeMode === 'dark' ? '#E7E3FC99' : '#000000',
+                                family: 'Arial', // Add font family if needed
+                                weight: 'normal', // Add font weight if needed
                             },
+                                color: themeMode === 'dark' ? '#E7E3FC99' : '#000000',
+                            
                         },
                     },
                     y: {
@@ -79,18 +82,21 @@ const EarningsChart: React.FC<EarningsChartProps> = ({ themeMode }) => {
                             },
                             font: {
                                 size: 10,
-                                color: themeMode === 'dark' ? '#E7E3FC99' : '#000000',
+                                family: 'Arial', // Add font family if needed
+                                weight: 'normal', // Add font weight if needed
                             },
+                                color: themeMode === 'dark' ? '#E7E3FC99' : '#000000',
                         },
                         grid: {
                             display: false,
                         },
-                    }
-                },
+                    },
+                }
+
             };
 
             chart = new Chart(ctx, {
-                type: 'bar' as ChartType,
+                type: 'bar',
                 data: {
                     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
                     datasets: [{

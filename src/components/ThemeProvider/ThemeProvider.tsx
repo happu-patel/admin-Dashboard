@@ -5,20 +5,29 @@ import CssBaseline from '@mui/material/CssBaseline';
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [mode, setMode] = useState<'light' | 'dark'>(() => {
-        const savedMode = localStorage.getItem('themeMode');
-        return (savedMode as 'light' | 'dark') || 'light';
-    });
+    const [mode, setMode] = useState<'light' | 'dark'>('light');
+
+    // Check if window is defined (indicating we are in the browser)
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const savedMode = localStorage.getItem('themeMode');
+            setMode((savedMode as 'light' | 'dark') || 'light');
+        }
+    }, []);
 
     useEffect(() => {
-        localStorage.setItem('themeMode', mode);
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('themeMode', mode);
+        }
     }, [mode]);
 
     const colorMode = useMemo(() => ({
         toggleColorMode: () => {
             setMode((prevMode) => {
                 const newMode = prevMode === 'light' ? 'dark' : 'light';
-                localStorage.setItem('themeMode', newMode);
+                if (typeof window !== 'undefined') {
+                    localStorage.setItem('themeMode', newMode);
+                }
                 return newMode;
             });
         },

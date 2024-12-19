@@ -7,8 +7,12 @@ export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [mode, setMode] = useState<'light' | 'dark'>('light');
+    const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
+        // Only run the following code in the browser (client-side)
+        setIsClient(true);
+
         if (typeof window !== 'undefined') {
             const savedMode = localStorage.getItem('themeMode') as 'light' | 'dark';
             if (savedMode === 'light' || savedMode === 'dark') {
@@ -18,10 +22,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }, []);
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
+        if (isClient && typeof window !== 'undefined') {
             localStorage.setItem('themeMode', mode);
         }
-    }, [mode]);
+    }, [mode, isClient]);
 
     const colorMode = useMemo(
         () => ({
@@ -62,6 +66,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             }),
         [mode]
     );
+
+    if (!isClient) {
+        return <div>Loading...</div>; // Optional: render a loading state until the client-side code runs
+    }
 
     return (
         <ColorModeContext.Provider value={colorMode}>

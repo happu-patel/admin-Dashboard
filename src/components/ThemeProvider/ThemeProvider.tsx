@@ -9,26 +9,26 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const [mode, setMode] = useState<'light' | 'dark'>('light');
 
     useEffect(() => {
-        // Ensure this only runs in the browser (client-side)
+        // Ensure this code only runs in the browser (client-side)
         if (typeof window !== 'undefined') {
             const savedMode = localStorage.getItem('themeMode') as 'light' | 'dark';
             if (savedMode === 'light' || savedMode === 'dark') {
-                setMode(savedMode);
+                setMode(savedMode);  // Set the mode based on localStorage
             }
         }
-    }, []); // Only run once on mount
+    }, []); // Only run on mount
 
     useEffect(() => {
-        // Ensure this only runs in the browser (client-side)
+        // Ensure this code only runs in the browser (client-side)
         if (typeof window !== 'undefined') {
-            localStorage.setItem('themeMode', mode);
+            localStorage.setItem('themeMode', mode);  // Save mode to localStorage when it changes
         }
-    }, [mode]); // Run whenever `mode` changes
+    }, [mode]);  // Run whenever mode changes
 
     const colorMode = useMemo(
         () => ({
             toggleColorMode: () => {
-                setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+                setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));  // Toggle between modes
             },
         }),
         []

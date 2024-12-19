@@ -33,7 +33,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { styled } from '@mui/material';
 import Image from 'next/image';
 import logo from '../../../images/Vuexy1.png';
-import { ThemeProvider } from '@/components/ThemeProvider/ThemeProvider';
+import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
 import { useTheme } from '@mui/material/styles';
 import { useMediaQuery } from '@mui/material';
 

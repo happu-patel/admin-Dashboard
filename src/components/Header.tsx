@@ -16,7 +16,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from 'react-icons/fa';
-import { ThemeProvider, ColorModeContext } from "@/components/ThemeProvider/ThemeProvider";
+import ThemeProvider, { ColorModeContext } from '@/components/ThemeProvider/ThemeProvider';
 import TransitionsModal from './Dashboard';
 import NotificationsModal from './Notification';
 import { TbUser, TbSettings, TbCurrencyDollar } from "react-icons/tb";

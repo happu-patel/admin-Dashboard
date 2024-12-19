@@ -30,7 +30,7 @@ import Header from "@/components/Header";
 import styles from "../page.module.css";
 import "../globals.css";
 import './style.css';
-import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
+import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
 import { LuUser, LuEye, LuEyeOff } from "react-icons/lu";
 import { MdOutlineMail, MdOutlineMessage } from "react-icons/md";
 import { TbPhone } from "react-icons/tb";

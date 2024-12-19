@@ -16,7 +16,7 @@ import { TbSend2 } from "react-icons/tb";
 import { TbChartPie2 } from "react-icons/tb";
 import { PiWarningCircleLight } from "react-icons/pi";
 import { IconButton } from '@mui/material';
-import { ThemeProvider, ColorModeContext } from "@/components/ThemeProvider/ThemeProvider";
+import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
 import { FirstPage, KeyboardArrowLeft, KeyboardArrowRight, LastPage, Margin } from '@mui/icons-material';
 import {
     Box,

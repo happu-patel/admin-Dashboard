@@ -22,7 +22,7 @@ import ProjectStatus from "@/components/ProjectStuts/ProjectStatus";
 import ActiveProject from "@/components/ActiveProjects/ActiveProject";
 import TransactionTable from "@/components/TranscationTable/TranscationTable";
 import ActivityTimeline from "@/components/TimeLine/ActiveTimeline";
-import { ThemeProvider, ColorModeContext } from "@/components/ThemeProvider/ThemeProvider";
+import ThemeProvider from "@/components/ThemeProvider/ThemeProvider";
 
 function Home() {
   const transactions = [

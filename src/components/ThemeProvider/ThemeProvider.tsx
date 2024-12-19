@@ -2,8 +2,12 @@ import React, { createContext, useState, useMemo, useEffect } from 'react';
 import { ThemeProvider as MUIThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
+type ColorModeContextType = {
+    toggleColorMode: () => void;
+};
+
 // Create a context to handle theme mode toggling
-export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+export const ColorModeContext = createContext<ColorModeContextType | undefined>(undefined);
 
 const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [mode, setMode] = useState<'light' | 'dark'>('light');

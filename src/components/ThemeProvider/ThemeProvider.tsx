@@ -16,14 +16,14 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
                 setMode(savedMode);
             }
         }
-    }, []);
+    }, []); // Only run once on mount
 
     useEffect(() => {
         // Ensure this only runs in the browser (client-side)
         if (typeof window !== 'undefined') {
             localStorage.setItem('themeMode', mode);
         }
-    }, [mode]);
+    }, [mode]); // Run whenever `mode` changes
 
     const colorMode = useMemo(
         () => ({

@@ -23,7 +23,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { BiSolidFilePdf } from "react-icons/bi";
 import PersonIcon from '@mui/icons-material/Person';
-import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
+import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
 import avtar1 from '../../images/Avtar1.png';
 import avtar2 from '../../images/avtar2.png';
 import avtar3 from '../../images/avtar3.png';

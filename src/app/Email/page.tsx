@@ -28,7 +28,7 @@ import { HiOutlineMailOpen as UnreadIcon, HiOutlineMail as ReadIcon } from "reac
 import { BiErrorAlt as SpamIcon, } from "react-icons/bi";
 import Header from '@/components/Header'
 import Sidebar from '@/components/Sidebar'
-import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
+import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
 import './style.css'
 import ComposeDialog from './ComposeDialog'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';

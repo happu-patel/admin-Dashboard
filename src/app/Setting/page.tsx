@@ -1,7 +1,7 @@
 "use client"
 import React, { SyntheticEvent, use, useEffect, useRef, useState } from "react";
 import { Box, Button, CardHeader, Checkbox, Chip, FormControlLabel, FormHelperText, FormLabel, Grid, IconButton, Input, InputAdornment, InputLabel, MenuItem, Select, Switch, Tab, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tabs, TextField, Typography, useTheme, } from '@mui/material';
-import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
+import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import styles from '../page.module.css';

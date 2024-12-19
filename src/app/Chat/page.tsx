@@ -8,7 +8,7 @@ import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
-import ThemeProvider from '@/components/ThemeProvider/ThemeProvider';
+import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
 import '../globals.css';
 import '../page.module.css';
 import styles from '../page.module.css';

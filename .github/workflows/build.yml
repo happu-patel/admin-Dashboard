@@ -9,14 +9,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13.1' # Replace with the required Python version
+
+      # Step 3: Verify Python version
+      - name: Verify Python version
+        run: python --version
+
+      # Step 4: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
+      # Step 5: Cache node modules
       - name: Cache node modules
         uses: actions/cache@v3
         with:
@@ -25,8 +38,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      # Step 6: Install dependencies
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
+      # Step 7: Debug environment (optional)
+      - name: Debug environment
+        run: |
+          echo "Python Version: $(python --version)"
+          echo "Node.js Version: $(node -v)"
+          echo "NPM Version: $(npm -v)"
+          echo "Working Directory: $(pwd)"
+          echo "Files: $(ls -la)"
+
+      # Step 8: Build the project
       - name: Build project
         run: npm run build

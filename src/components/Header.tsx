@@ -121,13 +121,25 @@ const Header: React.FC<Header> = ({ themeMode, toggleSidebar }) => {
                         </div>
                     </div>
                     <div className='search_end d-flex justify-content-between align-items-center'>
-                        <span className='fs-3 p-2'><IoLanguage style={{ color: themeMode === 'dark' ? '#E7E3FC99' : '#000000' }} /></span>
-                        <div className="dropdown" ref={themeDropdownRef}>
-                            <button className="btn btn-link p-0" type="button" onClick={colorMode.toggleColorMode} color="inherit">
-                                <span className='fs-3 p-2'>
-                                    {theme.palette.mode === 'light' ? <RiSunLine className='text-dark' /> : <RiMoonLine style={{ color: themeMode === 'dark' ? '#E7E3FC99' : '#000000' }} />}
-                                </span>
-                            </button>
+                        <span className='fs-3 p-2'>
+                <IoLanguage style={{ color: themeMode === 'dark' ? '#E7E3FC99' : '#000000' }} />
+            </span>
+            <div className="dropdown" ref={themeDropdownRef}>
+             <button
+                    className="btn btn-link p-0"
+                    type="button"
+                    onClick={colorMode?.toggleColorMode}  // Optional chaining to safely call the method
+                    color="inherit"
+                >
+                    <span className="fs-3 p-2">
+                        {themeMode === 'light' ? (
+                            <RiSunLine className="text-dark" />
+                        ) : (
+                            <RiMoonLine style={{ color: themeMode === 'dark' ? '#E7E3FC99' : '#000000' }} />
+                        )}
+                    </span>
+                </button>
+            
                             <ul className={`dropdown-menu${isThemeDropdownOpen ? ' show' : ''}`}>
                                 <li><a className="dropdown-item" href="#" onClick={() => handleThemeChange('light')}>Light</a></li>
                                 <li><a className="dropdown-item" href="#" onClick={() => handleThemeChange('dark')}>Dark</a></li>
